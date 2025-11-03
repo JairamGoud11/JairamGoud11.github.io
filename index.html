@@ -5,14 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Join the IONOS Domain VIP Club for exclusive bulk domain discounts, comprehensive management tools, API automation, and dedicated expert support. Perfect for domain investors, agencies, and businesses.">
     <link rel="canonical" href="https://cloud.domainvip.club">
-    <title>IONOS Domain VIP Club – Exclusive Bulk Domain Discounts & Management | Powered by IX</title>
+    <title>IONOS Domain VIP Club – Exclusive Bulk Domain Discounts & Management | Powered by InterNetX</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         :root {
             --primary-blue: #003d7a;
@@ -34,680 +30,157 @@
         }
 
         /* Header */
-        .header {
-            background: var(--white);
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+        .header { background: var(--white); box-shadow: 0 2px 4px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .header__container { max-width: 1400px; margin: 0 auto; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
 
-        .header__container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+        .header__logo { display: flex; align-items: center; gap: 0.5rem; font-size: 1.5rem; font-weight: bold; color: var(--primary-blue); text-decoration: none; }
+        .header__logo img { display: block; height: 40px; width: auto; }
 
-        .header__logo {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: var(--primary-blue);
-            text-decoration: none;
-        }
+        .header__nav { display: flex; gap: 2rem; list-style: none; align-items: center; }
+        .header__nav-link { color: var(--dark-gray); text-decoration: none; font-weight: 500; transition: color 0.3s; }
+        .header__nav-link:hover { color: var(--accent-blue); }
 
-        .header__logo i {
-            color: var(--accent-blue);
-        }
+        .header__cta { background: var(--accent-blue); color: white; padding: 0.625rem 1.5rem; border-radius: 4px; text-decoration: none; font-weight: 600; transition: background 0.3s; }
+        .header__cta:hover { background: var(--primary-blue); }
 
-        .header__nav {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-            align-items: center;
-        }
-
-        .header__nav-link {
-            color: var(--dark-gray);
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        .header__nav-link:hover {
-            color: var(--accent-blue);
-        }
-
-        .header__cta {
-            background: var(--accent-blue);
-            color: white;
-            padding: 0.625rem 1.5rem;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: background 0.3s;
-        }
-
-        .header__cta:hover {
-            background: var(--primary-blue);
-        }
-
-        .mobile-menu-btn {
-            display: none;
-            font-size: 1.5rem;
-            background: none;
-            border: none;
-            color: var(--primary-blue);
-            cursor: pointer;
-        }
+        .mobile-menu-btn { display: none; font-size: 1.5rem; background: none; border: none; color: var(--primary-blue); cursor: pointer; }
 
         /* Hero */
-        .hero {
-            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-blue) 100%);
-            color: var(--white);
-            padding: 5rem 2rem;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
+        .hero { background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-blue) 100%); color: var(--white); padding: 5rem 2rem; text-align: center; position: relative; overflow: hidden; }
+        .hero::before { content: ''; position: absolute; inset: 0; background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="white" opacity="0.1"/></svg>'); opacity: 0.3; }
+        .hero__container { max-width: 1200px; margin: 0 auto; position: relative; z-index: 1; }
 
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="white" opacity="0.1"/></svg>');
-            opacity: 0.3;
-        }
+        .hero__badge { display: inline-block; background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.875rem; margin-bottom: 1rem; backdrop-filter: blur(10px); }
+        /* New: InterNetX badge styles */
+        .hero__badge--image { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 0.9rem; }
+        .hero__badge--image img { height: 18px; width: auto; display: block; }
 
-        .hero__container {
-            max-width: 1200px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 1;
-        }
+        .hero__title { font-size: 3.5rem; margin-bottom: 1rem; font-weight: 700; line-height: 1.2; }
+        .hero__subtitle { font-size: 1.5rem; margin-bottom: 2rem; opacity: 0.95; max-width: 800px; margin-left: auto; margin-right: auto; }
 
-        .hero__badge {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.875rem;
-            margin-bottom: 1rem;
-            backdrop-filter: blur(10px);
-        }
+        .hero__features { display: flex; justify-content: center; gap: 2rem; margin: 2rem 0; flex-wrap: wrap; }
+        .hero__feature { display: flex; align-items: center; gap: 0.5rem; font-size: 1.125rem; }
+        .hero__feature i { color: var(--success-green); font-size: 1.25rem; }
 
-        .hero__title {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            font-weight: 700;
-            line-height: 1.2;
-        }
+        .hero__cta-group { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem; }
 
-        .hero__subtitle {
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
-            opacity: 0.95;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .hero__features {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin: 2rem 0;
-            flex-wrap: wrap;
-        }
-
-        .hero__feature {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 1.125rem;
-        }
-
-        .hero__feature i {
-            color: var(--success-green);
-            font-size: 1.25rem;
-        }
-
-        .hero__cta-group {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 2rem;
-        }
-
-        .btn {
-            padding: 1rem 2.5rem;
-            font-size: 1.125rem;
-            font-weight: 600;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            transition: all 0.3s;
-        }
-
-        .btn--primary {
-            background: var(--white);
-            color: var(--primary-blue);
-        }
-
-        .btn--primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-        }
-
-        .btn--secondary {
-            background: transparent;
-            color: var(--white);
-            border: 2px solid var(--white);
-        }
-
-        .btn--secondary:hover {
-            background: var(--white);
-            color: var(--primary-blue);
-        }
+        .btn { padding: 1rem 2.5rem; font-size: 1.125rem; font-weight: 600; border: none; border-radius: 4px; cursor: pointer; text-decoration: none; display: inline-block; transition: all 0.3s; }
+        .btn--primary { background: var(--white); color: var(--primary-blue); }
+        .btn--primary:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.2); }
+        .btn--secondary { background: transparent; color: var(--white); border: 2px solid var(--white); }
+        .btn--secondary:hover { background: var(--white); color: var(--primary-blue); }
 
         /* Stats Bar */
-        .stats {
-            background: var(--primary-blue);
-            color: white;
-            padding: 2rem;
-        }
+        .stats { background: var(--primary-blue); color: white; padding: 2rem; }
+        .stats__container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center; }
+        .stats__item h3 { font-size: 2.5rem; margin-bottom: 0.5rem; color: var(--success-green); }
+        .stats__item p { font-size: 1rem; opacity: 0.9; }
 
-        .stats__container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            text-align: center;
-        }
+        /* Sections & Cards */
+        .section { padding: 5rem 2rem; max-width: 1400px; margin: 0 auto; }
+        .section--gray { background: var(--light-gray); }
+        .section__header { text-align: center; margin-bottom: 3rem; }
+        .section__title { font-size: 2.5rem; margin-bottom: 1rem; color: var(--primary-blue); }
+        .section__subtitle { color: var(--medium-gray); font-size: 1.25rem; }
 
-        .stats__item h3 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            color: var(--success-green);
-        }
+        .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
+        .card { background: var(--white); border-radius: 12px; padding: 2.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: all 0.3s; border: 1px solid transparent; }
+        .card:hover { transform: translateY(-8px); box-shadow: 0 12px 40px rgba(0,0,0,0.12); border-color: var(--accent-blue); }
+        .card__icon { width: 70px; height: 70px; background: linear-gradient(135deg, var(--accent-blue), var(--primary-blue)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem; margin-bottom: 1.5rem; }
+        .card__title { font-size: 1.5rem; margin-bottom: 1rem; color: var(--primary-blue); }
+        .card__description { color: var(--medium-gray); line-height: 1.7; }
 
-        .stats__item p {
-            font-size: 1rem;
-            opacity: 0.9;
-        }
-
-        /* Value Props */
-        .section {
-            padding: 5rem 2rem;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .section--gray {
-            background: var(--light-gray);
-        }
-
-        .section__header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .section__title {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: var(--primary-blue);
-        }
-
-        .section__subtitle {
-            color: var(--medium-gray);
-            font-size: 1.25rem;
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
-        }
-
-        .card {
-            background: var(--white);
-            border-radius: 12px;
-            padding: 2.5rem;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            transition: all 0.3s;
-            border: 1px solid transparent;
-        }
-
-        .card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 40px rgba(0,0,0,0.12);
-            border-color: var(--accent-blue);
-        }
-
-        .card__icon {
-            width: 70px;
-            height: 70px;
-            background: linear-gradient(135deg, var(--accent-blue), var(--primary-blue));
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .card__title {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: var(--primary-blue);
-        }
-
-        .card__description {
-            color: var(--medium-gray);
-            line-height: 1.7;
-        }
-
-        /* Pricing Table */
-        .pricing-table {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .pricing-tier {
-            background: white;
-            border: 2px solid var(--light-gray);
-            border-radius: 12px;
-            padding: 2.5rem;
-            text-align: center;
-            transition: all 0.3s;
-            position: relative;
-        }
-
-        .pricing-tier:hover {
-            transform: scale(1.05);
-            box-shadow: 0 12px 40px rgba(0,0,0,0.1);
-        }
-
-        .pricing-tier--featured {
-            border-color: var(--accent-blue);
-            box-shadow: 0 8px 30px rgba(0, 102, 204, 0.15);
-            transform: scale(1.05);
-        }
-
-        .pricing-tier__badge {
-            position: absolute;
-            top: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: var(--orange);
-            color: white;
-            padding: 0.5rem 1.5rem;
-            border-radius: 20px;
-            font-size: 0.875rem;
-            font-weight: 600;
-        }
-
-        .pricing-tier__name {
-            font-size: 1.75rem;
-            margin-bottom: 1rem;
-            color: var(--primary-blue);
-        }
-
-        .pricing-tier__price {
-            font-size: 3rem;
-            font-weight: 700;
-            color: var(--accent-blue);
-            margin-bottom: 0.5rem;
-        }
-
-        .pricing-tier__period {
-            color: var(--medium-gray);
-            margin-bottom: 2rem;
-        }
-
-        .pricing-tier__features {
-            list-style: none;
-            margin-bottom: 2rem;
-            text-align: left;
-        }
-
-        .pricing-tier__features li {
-            padding: 0.75rem 0;
-            border-bottom: 1px solid var(--light-gray);
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-
-        .pricing-tier__features li:last-child {
-            border-bottom: none;
-        }
-
-        .pricing-tier__features i {
-            color: var(--success-green);
-            font-size: 1.125rem;
-        }
+        /* Pricing */
+        .pricing-table { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem; }
+        .pricing-tier { background: white; border: 2px solid var(--light-gray); border-radius: 12px; padding: 2.5rem; text-align: center; transition: all 0.3s; position: relative; }
+        .pricing-tier:hover { transform: scale(1.05); box-shadow: 0 12px 40px rgba(0,0,0,0.1); }
+        .pricing-tier--featured { border-color: var(--accent-blue); box-shadow: 0 8px 30px rgba(0, 102, 204, 0.15); transform: scale(1.05); }
+        .pricing-tier__badge { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--orange); color: white; padding: 0.5rem 1.5rem; border-radius: 20px; font-size: 0.875rem; font-weight: 600; }
+        .pricing-tier__name { font-size: 1.75rem; margin-bottom: 1rem; color: var(--primary-blue); }
+        .pricing-tier__price { font-size: 3rem; font-weight: 700; color: var(--accent-blue); margin-bottom: 0.5rem; }
+        .pricing-tier__period { color: var(--medium-gray); margin-bottom: 2rem; }
+        .pricing-tier__features { list-style: none; margin-bottom: 2rem; text-align: left; }
+        .pricing-tier__features li { padding: 0.75rem 0; border-bottom: 1px solid var(--light-gray); display: flex; align-items: center; gap: 0.75rem; }
+        .pricing-tier__features li:last-child { border-bottom: none; }
+        .pricing-tier__features i { color: var(--success-green); font-size: 1.125rem; }
 
         /* Domain Pricing Table */
-        .domain-pricing {
-            overflow-x: auto;
-            margin-top: 2rem;
-        }
+        .domain-pricing { overflow-x: auto; margin-top: 2rem; }
+        .domain-pricing__table { width: 100%; border-collapse: collapse; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; min-width: 600px; }
+        .domain-pricing__table th, .domain-pricing__table td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--light-gray); }
+        .domain-pricing__table th { background: var(--primary-blue); color: white; font-weight: 600; position: sticky; top: 0; }
+        .domain-pricing__table tr:hover { background: var(--light-blue); }
+        .domain-pricing__table td:first-child { font-weight: 600; color: var(--primary-blue); }
+        .price-highlight { color: var(--success-green); font-weight: 700; }
 
-        .domain-pricing__table {
-            width: 100%;
-            border-collapse: collapse;
-            background: white;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            border-radius: 8px;
-            overflow: hidden;
-            min-width: 600px; /* Ensure table looks good on desktop */
-        }
-
-        .domain-pricing__table th,
-        .domain-pricing__table td {
-            padding: 1rem;
-            text-align: left;
-            border-bottom: 1px solid var(--light-gray);
-        }
-
-        .domain-pricing__table th {
-            background: var(--primary-blue);
-            color: white;
-            font-weight: 600;
-            position: sticky;
-            top: 0;
-        }
-
-        .domain-pricing__table tr:hover {
-            background: var(--light-blue);
-        }
-
-        .domain-pricing__table td:first-child {
-            font-weight: 600;
-            color: var(--primary-blue);
-        }
-
-        .price-highlight {
-            color: var(--success-green);
-            font-weight: 700;
-        }
-
-        /* Target Audience */
-        .audience-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .audience-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            border-left: 4px solid var(--accent-blue);
-            transition: all 0.3s;
-        }
-
-        .audience-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 6px 25px rgba(0,0,0,0.12);
-        }
-
-        .audience-card__icon {
-            font-size: 2.5rem;
-            color: var(--accent-blue);
-            margin-bottom: 1rem;
-        }
-
-        .audience-card__title {
-            font-size: 1.5rem;
-            margin-bottom: 0.75rem;
-            color: var(--primary-blue);
-        }
+        /* Audience */
+        .audience-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .audience-card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-left: 4px solid var(--accent-blue); transition: all 0.3s; }
+        .audience-card:hover { transform: translateY(-4px); box-shadow: 0 6px 25px rgba(0,0,0,0.12); }
+        .audience-card__icon { font-size: 2.5rem; color: var(--accent-blue); margin-bottom: 1rem; }
+        .audience-card__title { font-size: 1.5rem; margin-bottom: 0.75rem; color: var(--primary-blue); }
 
         /* Benefits */
-        .benefits-list {
-            max-width: 900px;
-            margin: 2rem auto 0;
-            display: grid;
-            gap: 1.5rem;
-        }
-
-        .benefit-item {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-            border-left: 4px solid var(--success-green);
-        }
-
-        .benefit-item__icon {
-            color: var(--success-green);
-            font-size: 1.75rem;
-            flex-shrink: 0;
-        }
-
-        .benefit-item__content h4 {
-            font-size: 1.25rem;
-            margin-bottom: 0.5rem;
-            color: var(--primary-blue);
-        }
+        .benefits-list { max-width: 900px; margin: 2rem auto 0; display: grid; gap: 1.5rem; }
+        .benefit-item { background: white; padding: 1.5rem; border-radius: 8px; display: flex; align-items: flex-start; gap: 1rem; box-shadow: 0 2px 10px rgba(0,0,0,0.06); border-left: 4px solid var(--success-green); }
+        .benefit-item__icon { color: var(--success-green); font-size: 1.75rem; flex-shrink: 0; }
+        .benefit-item__content h4 { font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--primary-blue); }
 
         /* FAQ */
-        .faq-list {
-            max-width: 900px;
-            margin: 2rem auto 0;
-        }
+        .faq-list { max-width: 900px; margin: 2rem auto 0; }
+        .faq-item { background: white; margin-bottom: 1rem; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+        .faq-question { width: 100%; padding: 1.5rem; background: white; border: none; text-align: left; font-size: 1.125rem; font-weight: 600; color: var(--primary-blue); cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: background 0.3s; }
+        .faq-question:hover { background: var(--light-gray); }
+        .faq-question i { font-size: 1.25rem; transition: transform 0.3s; color: var(--accent-blue); }
+        .faq-question.active i { transform: rotate(180deg); }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        .faq-answer-content { padding: 0 1.5rem 1.5rem; color: var(--medium-gray); line-height: 1.7; }
 
-        .faq-item {
-            background: white;
-            margin-bottom: 1rem;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-
-        .faq-question {
-            width: 100%;
-            padding: 1.5rem;
-            background: white;
-            border: none;
-            text-align: left;
-            font-size: 1.125rem;
-            font-weight: 600;
-            color: var(--primary-blue);
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: background 0.3s;
-        }
-
-        .faq-question:hover {
-            background: var(--light-gray);
-        }
-
-        .faq-question i {
-            font-size: 1.25rem;
-            transition: transform 0.3s;
-            color: var(--accent-blue);
-        }
-
-        .faq-question.active i {
-            transform: rotate(180deg);
-        }
-
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out;
-        }
-
-        .faq-answer-content {
-            padding: 0 1.5rem 1.5rem;
-            color: var(--medium-gray);
-            line-height: 1.7;
-        }
-
-        /* CTA Section */
-        .cta-section {
-            background: linear-gradient(135deg, var(--accent-blue), var(--primary-blue));
-            color: white;
-            padding: 5rem 2rem;
-            text-align: center;
-        }
-
-        .cta-section__title {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .cta-section__subtitle {
-            font-size: 1.25rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-        }
+        /* CTA */
+        .cta-section { background: linear-gradient(135deg, var(--accent-blue), var(--primary-blue)); color: white; padding: 5rem 2rem; text-align: center; }
+        .cta-section__title { font-size: 2.5rem; margin-bottom: 1rem; }
+        .cta-section__subtitle { font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.9; }
 
         /* Footer */
-        .footer {
-            background: var(--dark-gray);
-            color: white;
-            padding: 3rem 2rem 1rem;
-        }
+        .footer { background: var(--dark-gray); color: white; padding: 3rem 2rem 1rem; }
+        .footer__container { max-width: 1400px; margin: 0 auto; }
+        .footer__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; margin-bottom: 2rem; }
+        .footer__section-title { font-size: 1.25rem; margin-bottom: 1rem; font-weight: 600; }
+        .footer__links { list-style: none; }
+        .footer__link { color: var(--light-gray); text-decoration: none; display: block; margin-bottom: 0.5rem; transition: color 0.3s; }
+        .footer__link:hover { color: white; }
+        .footer__bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; text-align: center; color: var(--light-gray); font-size: 0.875rem; }
+        .powered-by { display: inline-flex; align-items: center; gap: 0.4rem; }
+        .powered-by img { height: 16px; width: auto; vertical-align: middle; display: inline-block; }
 
-        .footer__container {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .footer__grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 3rem;
-            margin-bottom: 2rem;
-        }
-
-        .footer__section-title {
-            font-size: 1.25rem;
-            margin-bottom: 1rem;
-            font-weight: 600;
-        }
-
-        .footer__links {
-            list-style: none;
-        }
-
-        .footer__link {
-            color: var(--light-gray);
-            text-decoration: none;
-            display: block;
-            margin-bottom: 0.5rem;
-            transition: color 0.3s;
-        }
-
-        .footer__link:hover {
-            color: white;
-        }
-
-        .footer__bottom {
-            border-top: 1px solid rgba(255,255,255,0.1);
-            padding-top: 2rem;
-            text-align: center;
-            color: var(--light-gray);
-            font-size: 0.875rem;
-        }
-
-        /* Mobile Responsive */
+        /* Mobile */
         @media (max-width: 768px) {
-            .header__nav {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: white;
-                flex-direction: column;
-                padding: 1rem;
-                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            }
-
-            .header__nav.active {
-                display: flex;
-            }
-
-            .mobile-menu-btn {
-                display: block;
-            }
-
-            .hero__title {
-                font-size: 2rem;
-            }
-
-            .hero__subtitle {
-                font-size: 1.125rem;
-            }
-
-            .section__title {
-                font-size: 2rem;
-            }
-
-            .cards,
-            .pricing-table,
-            .audience-grid,
-            .testimonials-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .pricing-tier--featured {
-                transform: none;
-            }
+            .header__nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: white; flex-direction: column; padding: 1rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+            .header__nav.active { display: flex; }
+            .mobile-menu-btn { display: block; }
+            .hero__title { font-size: 2rem; }
+            .hero__subtitle { font-size: 1.125rem; }
+            .section__title { font-size: 2rem; }
+            .cards, .pricing-table, .audience-grid, .testimonials-grid { grid-template-columns: 1fr; }
+            .pricing-tier--featured { transform: none; }
         }
 
         /* Smooth Scroll */
-        html {
-            scroll-behavior: smooth;
-        }
+        html { scroll-behavior: smooth; }
 
         /* Loading Animation */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .fade-in {
-            animation: fadeIn 0.6s ease-out;
-        }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .fade-in { animation: fadeIn 0.6s ease-out; }
     </style>
 </head>
 <body>
     <header class="header">
         <div class="header__container">
-<a href="#" class="header__logo">
-    <img src="assets/logo2.png" alt="IONOS VIP Club Logo" style="height:40px; width:auto;">
-</a>
-            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
-                <i class="fas fa-bars"></i>
-            </button>
+            <a href="#" class="header__logo">
+                <!-- Use your existing logo file -->
+                <img src="assets/logo.png" alt="IONOS VIP Club Logo">
+            </a>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()"><i class="fas fa-bars"></i></button>
             <nav>
                 <ul class="header__nav" id="main-nav">
                     <li><a href="#benefits" class="header__nav-link">Benefits</a></li>
@@ -723,29 +196,20 @@
     <main>
         <section class="hero">
             <div class="hero__container">
-                <div class="hero__badge">
-                    <i class="fas fa-bolt"></i> Powered by IX
+                <!-- Replaced text badge with InterNetX logo -->
+                <div class="hero__badge hero__badge--image">
+                    <span>Powered by</span>
+                    <img src="assets/internetx-logo.svg" alt="InterNetX logo">
                 </div>
+
                 <h1 class="hero__title">IONOS Domain VIP Club</h1>
                 <p class="hero__subtitle">Unlock exclusive bulk domain discounts, comprehensive management tools, and dedicated expert support for serious domain professionals</p>
-                
+
                 <div class="hero__features">
-                    <div class="hero__feature">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Up to 35% Bulk Discounts</span>
-                    </div>
-                    <div class="hero__feature">
-                        <i class="fas fa-check-circle"></i>
-                        <span>1000+ TLDs</span>
-                    </div>
-                    <div class="hero__feature">
-                        <i class="fas fa-check-circle"></i>
-                        <span>API Integration</span>
-                    </div>
-                    <div class="hero__feature">
-                        <i class="fas fa-check-circle"></i>
-                        <span>24/7 Support</span>
-                    </div>
+                    <div class="hero__feature"><i class="fas fa-check-circle"></i><span>Up to 35% Bulk Discounts</span></div>
+                    <div class="hero__feature"><i class="fas fa-check-circle"></i><span>1000+ TLDs</span></div>
+                    <div class="hero__feature"><i class="fas fa-check-circle"></i><span>API Integration</span></div>
+                    <div class="hero__feature"><i class="fas fa-check-circle"></i><span>24/7 Support</span></div>
                 </div>
 
                 <div class="hero__cta-group">
@@ -757,22 +221,10 @@
 
         <section class="stats">
             <div class="stats__container">
-                <div class="stats__item">
-                    <h3>1000+</h3>
-                    <p>Available TLDs</p>
-                </div>
-                <div class="stats__item">
-                    <h3>20M+</h3>
-                    <p>Premium Domains</p>
-                </div>
-                <div class="stats__item">
-                    <h3>35%</h3>
-                    <p>Max Bulk Discount</p>
-                </div>
-                <div class="stats__item">
-                    <h3>24/7</h3>
-                    <p>Expert Support</p>
-                </div>
+                <div class="stats__item"><h3>1000+</h3><p>Available TLDs</p></div>
+                <div class="stats__item"><h3>20M+</h3><p>Premium Domains</p></div>
+                <div class="stats__item"><h3>35%</h3><p>Max Bulk Discount</p></div>
+                <div class="stats__item"><h3>24/7</h3><p>Expert Support</p></div>
             </div>
         </section>
 
@@ -784,25 +236,19 @@
 
             <div class="cards">
                 <div class="card fade-in">
-                    <div class="card__icon">
-                        <i class="fas fa-tags"></i>
-                    </div>
+                    <div class="card__icon"><i class="fas fa-tags"></i></div>
                     <h3 class="card__title">Best-in-Market Discounted Pricing</h3>
                     <p class="card__description">Access exclusive bulk domain pricing that beats standard retail rates. The more domains you manage, the more you save. Our tiered pricing structure rewards volume with industry-leading discounts on registrations, renewals, and transfers.</p>
                 </div>
 
                 <div class="card fade-in">
-                    <div class="card__icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
+                    <div class="card__icon"><i class="fas fa-cogs"></i></div>
                     <h3 class="card__title">Comprehensive Bulk Management</h3>
                     <p class="card__description">Manage hundreds or thousands of domains with ease using our powerful bulk operations dashboard. Perform mass updates, configure DNS settings across portfolios, and automate routine tasks with our advanced API integration.</p>
                 </div>
 
                 <div class="card fade-in">
-                    <div class="card__icon">
-                        <i class="fas fa-headset"></i>
-                    </div>
+                    <div class="card__icon"><i class="fas fa-headset"></i></div>
                     <h3 class="card__title">Dedicated Expert Support</h3>
                     <p class="card__description">Get priority access to domain specialists who understand your business. Enjoy guaranteed SLA response times, direct phone support, and personalized concierge onboarding to optimize your domain infrastructure.</p>
                 </div>
@@ -848,7 +294,7 @@
                 <h2 class="section__title">VIP Domain Pricing vs. Retail</h2>
                 <p class="section__subtitle">Stop paying retail. Our members save significantly on registrations, renewals, and transfers across 1000+ TLDs.</p>
             </div>
-            
+
             <div class="domain-pricing">
                 <table class="domain-pricing__table fade-in">
                     <thead>
@@ -860,36 +306,11 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>.com</td>
-                            <td>$16.99</td>
-                            <td class="price-highlight">$11.99</td>
-                            <td>$5.00</td>
-                        </tr>
-                        <tr>
-                            <td>.net</td>
-                            <td>$19.99</td>
-                            <td class="price-highlight">$13.49</td>
-                            <td>$6.50</td>
-                        </tr>
-                        <tr>
-                            <td>.org</td>
-                            <td>$15.99</td>
-                            <td class="price-highlight">$10.99</td>
-                            <td>$5.00</td>
-                        </tr>
-                        <tr>
-                            <td>.info</td>
-                            <td>$24.99</td>
-                            <td class="price-highlight">$17.99</td>
-                            <td>$7.00</td>
-                        </tr>
-                        <tr>
-                            <td>.io</td>
-                            <td>$54.99</td>
-                            <td class="price-highlight">$44.99</td>
-                            <td>$10.00</td>
-                        </tr>
+                        <tr><td>.com</td><td>$16.99</td><td class="price-highlight">$11.99</td><td>$5.00</td></tr>
+                        <tr><td>.net</td><td>$19.99</td><td class="price-highlight">$13.49</td><td>$6.50</td></tr>
+                        <tr><td>.org</td><td>$15.99</td><td class="price-highlight">$10.99</td><td>$5.00</td></tr>
+                        <tr><td>.info</td><td>$24.99</td><td class="price-highlight">$17.99</td><td>$7.00</td></tr>
+                        <tr><td>.io</td><td>$54.99</td><td class="price-highlight">$44.99</td><td>$10.00</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -911,111 +332,74 @@
 
             <div class="audience-grid">
                 <div class="audience-card fade-in">
-                    <div class="audience-card__icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
+                    <div class="audience-card__icon"><i class="fas fa-chart-line"></i></div>
                     <h3 class="audience-card__title">Domain Investors & Resellers</h3>
-                    <p class="audience-card__description">Maximize your profit margins with **wholesale domain pricing** across 1000+ TLDs. Utilize Aftermarket Access and advanced bulk transfer tools for efficient portfolio management.</p>
+                    <p class="audience-card__description">Maximize your profit margins with <strong>wholesale domain pricing</strong> across 1000+ TLDs. Utilize Aftermarket Access and advanced bulk transfer tools for efficient portfolio management.</p>
                 </div>
 
                 <div class="audience-card fade-in">
-                    <div class="audience-card__icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
+                    <div class="audience-card__icon"><i class="fas fa-briefcase"></i></div>
                     <h3 class="audience-card__title">Web Agencies & Client Managers</h3>
                     <p class="audience-card__description">Simplify client domain management with a central dashboard, white-label options, and automated API workflows. Consolidate your client portfolios and reduce operational overhead.</p>
                 </div>
 
                 <div class="audience-card fade-in">
-                    <div class="audience-card__icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
+                    <div class="audience-card__icon"><i class="fas fa-cogs"></i></div>
                     <h3 class="audience-card__title">Developers & DevOps Teams</h3>
                     <p class="audience-card__description">Integrate seamlessly with our powerful, well-documented REST API for automated registration, DNS configuration, and custom infrastructure workflows. Built for high-volume automation.</p>
                 </div>
 
                 <div class="audience-card fade-in">
-                    <div class="audience-card__icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
+                    <div class="audience-card__icon"><i class="fas fa-shield-alt"></i></div>
                     <h3 class="audience-card__title">Corporate & Brand Protection</h3>
                     <p class="audience-card__description">Protect your brand globally by managing large numbers of domains and country-code TLDs (ccTLDs). Benefit from advanced security features and dedicated account management for compliance.</p>
                 </div>
             </div>
         </section>
 
-<section id="faq" class="section section--gray">
-    <div class="section__header">
-        <h2 class="section__title">Frequently Asked Questions</h2>
-        <p class="section__subtitle">Find answers to the most common questions about the VIP Club.</p>
-    </div>
-
-    <div class="faq-list">
-        <div class="faq-item">
-            <button class="faq-question">
-                What makes the VIP Club different from standard IONOS domain registration?
-                <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="faq-answer">
-                <p class="faq-answer-content">
-                    The VIP Club offers substantial <strong>wholesale pricing</strong> for users who manage a high volume of domains, often beating standard retail and promotional prices. 
-                    It also provides exclusive access to an advanced bulk management dashboard, REST API for automation, and dedicated premium support not available to standard customers.
-                </p>
+        <section id="faq" class="section section--gray">
+            <div class="section__header">
+                <h2 class="section__title">Frequently Asked Questions</h2>
+                <p class="section__subtitle">Find answers to the most common questions about the VIP Club.</p>
             </div>
-        </div>
 
-        <div class="faq-item">
-            <button class="faq-question">
-                Is there a minimum number of domains required to join?
-                <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="faq-answer">
-                <p class="faq-answer-content">
-                    No, you can join and immediately benefit from our discounted pricing, though the greatest savings are realized by those managing portfolios of 50 or more domains.
-                </p>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">What makes the VIP Club different from standard IONOS domain registration? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p class="faq-answer-content">The VIP Club offers substantial <strong>wholesale pricing</strong> for users who manage a high volume of domains, often beating standard retail and promotional prices. It also provides exclusive access to an advanced bulk management dashboard, REST API for automation, and dedicated premium support not available to standard customers.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">Is there a minimum number of domains required to join? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p class="faq-answer-content">No, you can join and immediately benefit from our discounted pricing, though the greatest savings are realized by those managing portfolios of 50 or more domains.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">What should I do after I sign up for the DomainVIP Club? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p class="faq-answer-content">Once you sign up, you get to experience how your exclusive domain management interface looks. The best part is that you do not need to buy a tariff to see the initial look and feel of the product. You can take a look without any obligations.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">What if the TLD I want isn't offered in the club? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p class="faq-answer-content">If the desired TLD is currently not in our portfolio, please contact us and we will do our best to make the TLD available for you.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">Can you help me migrate my domains from other registrars? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p class="faq-answer-content">We offer an external portfolio management tool with easy access to certain competitor APIs. This tool will also assist with semi-automated bulk domain transfers prior to their expiration.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class="faq-item">
-            <button class="faq-question">
-            What should I do after I sign up for the DomainVIP Club?
-                <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="faq-answer">
-                <p class="faq-answer-content">
-                    Once you sign up, you get to experience how your exclusive domain management interface looks. The best part is that you do not need to buy a tariff to see the initial look and feel of the product. 
-                    You can take a look without any obligations.
-                </p>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <button class="faq-question">
-                What if the TLD I want isn't offered in the club?
-                <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="faq-answer">
-                <p class="faq-answer-content">
-                    If the desired TLD is currently not in our portfolio, please contact us and we will do our best to make the TLD available for you.
-                </p>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <button class="faq-question">
-                Can you help me migrate my domains from other registrars?
-                <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="faq-answer">
-                <p class="faq-answer-content">
-                    We offer an external portfolio management tool with easy access to certain competitor APIs. 
-                    This tool will also assist with semi-automated bulk domain transfers prior to their expiration.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
+        </section>
 
         <section class="cta-section">
             <div class="hero__container">
@@ -1024,7 +408,6 @@
                 <a href="https://cloud.domainvip.club/register/" class="btn btn--primary">Join the VIP Club Now</a>
             </div>
         </section>
-
     </main>
 
     <footer class="footer">
@@ -1059,8 +442,12 @@
                     </ul>
                 </div>
             </div>
+
             <div class="footer__bottom">
-                &copy; 2025 IONOS VIP Club. All Rights Reserved. Powered by IX.
+                &copy; 2025 IONOS VIP Club. All Rights Reserved.
+                <span class="powered-by">
+                    Powered by <img src="assets/internetx-logo.svg" alt="InterNetX">
+                </span>
             </div>
         </div>
     </footer>
@@ -1070,9 +457,7 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
             });
         });
 
@@ -1087,7 +472,8 @@
                     if (otherButton !== button) {
                         otherButton.classList.remove('active');
                         otherButton.nextElementSibling.style.maxHeight = null;
-                        otherButton.querySelector('i').style.transform = 'rotate(0deg)';
+                        const otherIcon = otherButton.querySelector('i');
+                        if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
                     }
                 });
 
@@ -1095,10 +481,10 @@
                 button.classList.toggle('active');
                 if (answer.style.maxHeight) {
                     answer.style.maxHeight = null;
-                    icon.style.transform = 'rotate(0deg)';
+                    if (icon) icon.style.transform = 'rotate(0deg)';
                 } else {
                     answer.style.maxHeight = answer.scrollHeight + "px";
-                    icon.style.transform = 'rotate(180deg)';
+                    if (icon) icon.style.transform = 'rotate(180deg)';
                 }
             });
         });
@@ -1111,23 +497,15 @@
 
         // Fade-in effect on scroll (basic implementation)
         const faders = document.querySelectorAll('.fade-in');
-        const appearOptions = {
-            threshold: 0,
-            rootMargin: "0px 0px -100px 0px"
-        };
-        const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+        const appearOptions = { threshold: 0, rootMargin: "0px 0px -100px 0px" };
+        const appearOnScroll = new IntersectionObserver(function(entries, io) {
             entries.forEach(entry => {
-                if (!entry.isIntersecting) {
-                    return;
-                }
+                if (!entry.isIntersecting) return;
                 entry.target.classList.add('fade-in');
-                appearOnScroll.unobserve(entry.target);
+                io.unobserve(entry.target);
             });
         }, appearOptions);
-
-        faders.forEach(fader => {
-            appearOnScroll.observe(fader);
-        });
+        faders.forEach(fader => appearOnScroll.observe(fader));
     </script>
 </body>
 </html>
