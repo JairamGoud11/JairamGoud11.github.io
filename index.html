@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jairam Goud | Product & Project Manager | Germany</title>
+  <meta name="description" content="Jairam Goud — experienced Product Manager, Project Manager & Operations Leader based in Germany. 10+ years across Amazon, Google, IONOS. Open to full-time English-speaking roles in Germany." />
+  <meta name="keywords" content="Product Manager Germany, Product Owner Germany, Project Manager Germany, Program Manager Germany, Operations Manager Germany, MBA Germany, Digital Marketing Operations, AdTech Project Manager, Product Management Portfolio, Jairam Goud" />
+  <meta property="og:title" content="Jairam Goud | Product & Project Manager | Germany" />
+  <meta property="og:description" content="10+ years across Amazon, Google, IONOS — Product Manager, Project Manager & Operations Leader open to full-time roles in Germany." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy: #0D1B2A;
+      --navy-light: #1B2D42;
+      --teal: #00B4D8;
+      --teal-light: #90E0EF;
+      --gold: #F4A261;
+      --white: #FFFFFF;
+      --offwhite: #F8FAFC;
+      --gray: #64748B;
+      --gray-light: #E2E8F0;
+      --success: #10B981;
+      --radius: 12px;
+      --shadow: 0 4px 24px rgba(0,0,0,0.08);
+      --shadow-hover: 0 8px 40px rgba(0,0,0,0.15);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--white);
+      color: var(--navy);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ─── NAVIGATION ─── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(13,27,42,0.97);
+      backdrop-filter: blur(12px);
+      padding: 0 2rem;
+      height: 64px;
+      display: flex; align-items: center; justify-content: space-between;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+    .nav-logo {
+      font-weight: 700; font-size: 1.1rem; color: var(--white);
+      letter-spacing: 0.3px;
+    }
+    .nav-logo span { color: var(--teal); }
+    .nav-links {
+      display: flex; gap: 1.8rem; list-style: none;
+      align-items: center;
+    }
+    .nav-links a {
+      color: rgba(255,255,255,0.75); text-decoration: none;
+      font-size: 0.875rem; font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--teal); }
+    .nav-cta {
+      background: var(--teal); color: var(--navy) !important;
+      padding: 0.45rem 1.1rem; border-radius: 6px;
+      font-weight: 600 !important;
+    }
+    .nav-cta:hover { background: var(--teal-light); }
+    .hamburger { display: none; cursor: pointer; background: none; border: none; }
+    .hamburger span {
+      display: block; width: 24px; height: 2px;
+      background: var(--white); margin: 5px 0; transition: 0.3s;
+    }
+
+    /* ─── HERO ─── */
+    #hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 50%, #0a2a3d 100%);
+      display: flex; align-items: center;
+      padding: 100px 2rem 60px;
+      position: relative; overflow: hidden;
+    }
+    #hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 70% 50%, rgba(0,180,216,0.12) 0%, transparent 60%);
+    }
+    .hero-grid {
+      max-width: 1100px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 340px;
+      gap: 4rem; align-items: center;
+      position: relative; z-index: 1;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: rgba(0,180,216,0.12);
+      border: 1px solid rgba(0,180,216,0.3);
+      color: var(--teal); font-size: 0.8rem; font-weight: 600;
+      padding: 0.4rem 1rem; border-radius: 100px;
+      margin-bottom: 1.5rem; letter-spacing: 0.5px; text-transform: uppercase;
+    }
+    .hero-badge::before { content: '●'; font-size: 0.5rem; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      color: var(--white); line-height: 1.15;
+      margin-bottom: 0.5rem;
+    }
+    .hero-title span { color: var(--teal); }
+    .hero-subtitle {
+      font-size: 1.1rem; color: rgba(255,255,255,0.6);
+      margin-bottom: 1.5rem; font-weight: 400;
+    }
+    .hero-desc {
+      font-size: 1rem; color: rgba(255,255,255,0.8);
+      max-width: 560px; margin-bottom: 2.5rem;
+      line-height: 1.8;
+    }
+    .hero-btns {
+      display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 3rem;
+    }
+    .btn-primary {
+      background: var(--teal); color: var(--navy);
+      padding: 0.85rem 2rem; border-radius: 8px;
+      font-weight: 700; font-size: 0.95rem;
+      text-decoration: none; transition: all 0.2s;
+      border: 2px solid var(--teal);
+    }
+    .btn-primary:hover {
+      background: var(--teal-light); transform: translateY(-1px);
+      box-shadow: 0 8px 24px rgba(0,180,216,0.35);
+    }
+    .btn-outline {
+      background: transparent; color: var(--white);
+      padding: 0.85rem 2rem; border-radius: 8px;
+      font-weight: 600; font-size: 0.95rem;
+      text-decoration: none; transition: all 0.2s;
+      border: 2px solid rgba(255,255,255,0.3);
+    }
+    .btn-outline:hover {
+      border-color: var(--teal); color: var(--teal);
+      transform: translateY(-1px);
+    }
+    .hero-stats {
+      display: flex; gap: 2rem; flex-wrap: wrap;
+    }
+    .hero-stat strong {
+      display: block; font-size: 1.6rem; font-weight: 800;
+      color: var(--teal);
+    }
+    .hero-stat span { font-size: 0.8rem; color: rgba(255,255,255,0.5); }
+    .hero-photo-wrap {
+      display: flex; justify-content: center; align-items: center;
+    }
+    .hero-photo {
+      width: 280px; height: 280px; border-radius: 50%;
+      background: linear-gradient(135deg, rgba(0,180,216,0.15), rgba(244,162,97,0.1));
+      border: 3px solid rgba(0,180,216,0.3);
+      display: flex; align-items: center; justify-content: center;
+      flex-direction: column; gap: 0.5rem;
+      position: relative;
+    }
+    .hero-photo::after {
+      content: '';
+      position: absolute; inset: -8px;
+      border-radius: 50%;
+      border: 1px solid rgba(0,180,216,0.15);
+      animation: spin 20s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .hero-photo-icon { font-size: 5rem; }
+    .hero-photo-label {
+      font-size: 0.75rem; color: rgba(255,255,255,0.4);
+      text-align: center; max-width: 160px; line-height: 1.4;
+    }
+
+    /* ─── SECTIONS SHARED ─── */
+    section { padding: 90px 2rem; }
+    .section-inner { max-width: 1100px; margin: 0 auto; }
+    .section-tag {
+      display: inline-block; font-size: 0.75rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 1.5px;
+      color: var(--teal); margin-bottom: 0.75rem;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      color: var(--navy); margin-bottom: 1rem; line-height: 1.2;
+    }
+    .section-desc {
+      font-size: 1rem; color: var(--gray);
+      max-width: 640px; margin-bottom: 3rem;
+    }
+    .divider {
+      width: 48px; height: 4px;
+      background: linear-gradient(90deg, var(--teal), var(--gold));
+      border-radius: 2px; margin: 1rem 0 2rem;
+    }
+
+    /* ─── VIDEO INTRO ─── */
+    #video { background: var(--offwhite); }
+    .video-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 4rem; align-items: center;
+    }
+    .video-placeholder {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+      border-radius: var(--radius);
+      aspect-ratio: 16/9;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 1rem;
+      cursor: pointer; transition: transform 0.2s;
+      border: 1px solid rgba(0,180,216,0.2);
+      position: relative; overflow: hidden;
+    }
+    .video-placeholder:hover { transform: scale(1.02); }
+    .play-btn {
+      width: 64px; height: 64px; border-radius: 50%;
+      background: var(--teal); display: flex; align-items: center;
+      justify-content: center; font-size: 1.5rem;
+      box-shadow: 0 0 0 12px rgba(0,180,216,0.15);
+    }
+    .video-label {
+      color: rgba(255,255,255,0.7); font-size: 0.85rem;
+    }
+    .video-points { list-style: none; }
+    .video-points li {
+      padding: 0.6rem 0; border-bottom: 1px solid var(--gray-light);
+      display: flex; gap: 0.75rem; align-items: flex-start;
+      font-size: 0.95rem; color: var(--gray);
+    }
+    .video-points li::before { content: '▸'; color: var(--teal); font-size: 0.8rem; margin-top: 3px; }
+
+    /* ─── TIMELINE ─── */
+    #timeline { background: var(--white); }
+    .timeline {
+      position: relative; max-width: 800px; margin: 0 auto;
+    }
+    .timeline::before {
+      content: ''; position: absolute; left: 50%; top: 0; bottom: 0;
+      width: 2px; background: linear-gradient(180deg, var(--teal), var(--gold));
+      transform: translateX(-50%);
+    }
+    .tl-item {
+      display: flex; margin-bottom: 2.5rem; position: relative;
+    }
+    .tl-item:nth-child(even) { flex-direction: row-reverse; }
+    .tl-dot {
+      position: absolute; left: 50%; top: 1rem;
+      width: 16px; height: 16px; border-radius: 50%;
+      background: var(--teal); border: 3px solid var(--white);
+      box-shadow: 0 0 0 3px var(--teal);
+      transform: translateX(-50%); z-index: 2;
+    }
+    .tl-content {
+      width: calc(50% - 2rem);
+      background: var(--white);
+      border: 1px solid var(--gray-light);
+      border-radius: var(--radius); padding: 1.25rem 1.5rem;
+      box-shadow: var(--shadow); transition: box-shadow 0.2s;
+    }
+    .tl-content:hover { box-shadow: var(--shadow-hover); }
+    .tl-item:nth-child(odd) .tl-content { margin-right: auto; }
+    .tl-item:nth-child(even) .tl-content { margin-left: auto; }
+    .tl-date { font-size: 0.75rem; font-weight: 700; color: var(--teal); text-transform: uppercase; letter-spacing: 0.5px; }
+    .tl-co { font-size: 1rem; font-weight: 700; color: var(--navy); margin: 0.25rem 0; }
+    .tl-role { font-size: 0.875rem; color: var(--gray); margin-bottom: 0.5rem; }
+    .tl-desc { font-size: 0.85rem; color: var(--gray); line-height: 1.6; }
+    .tl-tag {
+      display: inline-block; background: rgba(0,180,216,0.08);
+      color: var(--teal); font-size: 0.7rem; font-weight: 600;
+      padding: 0.2rem 0.6rem; border-radius: 100px; margin-top: 0.75rem;
+    }
+
+    /* ─── ACHIEVEMENTS ─── */
+    #achievements { background: var(--navy); }
+    #achievements .section-title { color: var(--white); }
+    #achievements .section-tag { color: var(--teal); }
+    #achievements .section-desc { color: rgba(255,255,255,0.6); }
+    .achieve-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+    .achieve-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--radius); padding: 2rem 1.5rem;
+      text-align: center; transition: all 0.3s;
+      position: relative; overflow: hidden;
+    }
+    .achieve-card:hover {
+      background: rgba(0,180,216,0.1);
+      border-color: rgba(0,180,216,0.3);
+      transform: translateY(-4px);
+    }
+    .achieve-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--teal), var(--gold));
+    }
+    .achieve-num {
+      font-size: 2.8rem; font-weight: 800;
+      background: linear-gradient(135deg, var(--teal), var(--teal-light));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text; line-height: 1.1; margin-bottom: 0.5rem;
+    }
+    .achieve-label { font-size: 0.875rem; color: rgba(255,255,255,0.7); line-height: 1.5; }
+    .achieve-sub { font-size: 0.75rem; color: rgba(255,255,255,0.4); margin-top: 0.5rem; }
+
+    /* ─── EXPERIENCE ─── */
+    #experience { background: var(--offwhite); }
+    .exp-cards { display: flex; flex-direction: column; gap: 2rem; }
+    .exp-card {
+      background: var(--white); border-radius: var(--radius);
+      padding: 2rem 2.5rem; box-shadow: var(--shadow);
+      border-left: 4px solid var(--teal);
+      transition: box-shadow 0.2s;
+    }
+    .exp-card:hover { box-shadow: var(--shadow-hover); }
+    .exp-header {
+      display: flex; justify-content: space-between;
+      align-items: flex-start; flex-wrap: wrap; gap: 1rem;
+      margin-bottom: 1.25rem;
+    }
+    .exp-company { font-size: 1.25rem; font-weight: 700; color: var(--navy); }
+    .exp-role { font-size: 0.95rem; color: var(--teal); font-weight: 600; margin-bottom: 0.25rem; }
+    .exp-dates { font-size: 0.8rem; color: var(--gray); font-weight: 500; }
+    .exp-desc { font-size: 0.95rem; color: var(--gray); margin-bottom: 1rem; line-height: 1.7; }
+    .exp-bullets { list-style: none; margin-bottom: 1.25rem; }
+    .exp-bullets li {
+      font-size: 0.9rem; color: var(--navy); padding: 0.35rem 0;
+      display: flex; gap: 0.75rem;
+    }
+    .exp-bullets li::before { content: '→'; color: var(--teal); font-weight: 700; }
+    .exp-skills { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .skill-chip {
+      background: rgba(0,180,216,0.08); color: var(--navy);
+      font-size: 0.75rem; font-weight: 600;
+      padding: 0.3rem 0.75rem; border-radius: 100px;
+      border: 1px solid rgba(0,180,216,0.2);
+    }
+
+    /* ─── GERMANY JOURNEY ─── */
+    #germany { background: linear-gradient(135deg, var(--navy) 0%, #0a2535 100%); }
+    #germany .section-title { color: var(--white); }
+    #germany .section-tag { color: var(--gold); }
+    #germany .section-desc { color: rgba(255,255,255,0.65); max-width: 100%; }
+    .germany-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+    .germany-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius); padding: 1.75rem;
+      transition: all 0.2s;
+    }
+    .germany-card:hover {
+      background: rgba(0,180,216,0.1);
+      border-color: rgba(0,180,216,0.25);
+    }
+    .germany-card-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+    .germany-card-title { font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: 0.5rem; }
+    .germany-card-text { font-size: 0.875rem; color: rgba(255,255,255,0.65); line-height: 1.65; }
+
+    /* ─── PROJECTS ─── */
+    #projects { background: var(--white); }
+    .projects-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.75rem;
+    }
+    .project-card {
+      border: 1px solid var(--gray-light); border-radius: var(--radius);
+      padding: 1.75rem; transition: all 0.2s; position: relative;
+    }
+    .project-card:hover {
+      border-color: var(--teal);
+      box-shadow: var(--shadow-hover); transform: translateY(-3px);
+    }
+    .project-type {
+      font-size: 0.7rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.8px; color: var(--teal); margin-bottom: 0.75rem;
+    }
+    .project-title { font-size: 1.05rem; font-weight: 700; color: var(--navy); margin-bottom: 0.6rem; }
+    .project-desc { font-size: 0.875rem; color: var(--gray); margin-bottom: 1rem; line-height: 1.65; }
+    .project-meta { font-size: 0.8rem; color: var(--navy); font-weight: 600; margin-bottom: 0.25rem; }
+    .project-meta span { color: var(--gray); font-weight: 400; }
+    .project-skills { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 1rem; }
+    .project-skill {
+      background: var(--offwhite); color: var(--gray);
+      font-size: 0.7rem; padding: 0.25rem 0.6rem;
+      border-radius: 4px; font-weight: 500;
+    }
+
+    /* ─── SKILLS ─── */
+    #skills { background: var(--offwhite); }
+    .skills-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+    .skill-group {
+      background: var(--white); border-radius: var(--radius);
+      padding: 1.5rem; box-shadow: var(--shadow);
+      border-top: 3px solid var(--teal);
+    }
+    .skill-group-title {
+      font-size: 0.875rem; font-weight: 700; color: var(--navy);
+      margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;
+    }
+    .skill-group-title span { font-size: 1.1rem; }
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .skill-tag {
+      background: var(--offwhite); color: var(--navy);
+      font-size: 0.775rem; padding: 0.35rem 0.75rem;
+      border-radius: 6px; font-weight: 500;
+      border: 1px solid var(--gray-light);
+    }
+
+    /* ─── SOCIAL IMPACT ─── */
+    #impact { background: var(--white); }
+    .impact-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+    .impact-card {
+      border: 1px solid var(--gray-light); border-radius: var(--radius);
+      padding: 1.5rem; text-align: center; transition: all 0.2s;
+    }
+    .impact-card:hover {
+      border-color: var(--gold);
+      box-shadow: 0 4px 20px rgba(244,162,97,0.15);
+    }
+    .impact-icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
+    .impact-title { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 0.5rem; }
+    .impact-text { font-size: 0.875rem; color: var(--gray); line-height: 1.6; }
+
+    /* ─── HOBBIES ─── */
+    #hobbies { background: var(--offwhite); }
+    .hobbies-flex { display: flex; flex-wrap: wrap; gap: 1rem; }
+    .hobby-pill {
+      background: var(--white); border: 1px solid var(--gray-light);
+      border-radius: 100px; padding: 0.6rem 1.25rem;
+      display: flex; align-items: center; gap: 0.6rem;
+      font-size: 0.9rem; font-weight: 500; color: var(--navy);
+      transition: all 0.2s;
+    }
+    .hobby-pill:hover {
+      border-color: var(--teal); color: var(--teal);
+      box-shadow: 0 2px 12px rgba(0,180,216,0.15);
+    }
+    .hobby-skill {
+      font-size: 0.75rem; color: var(--gray); margin-top: 0.5rem;
+      font-style: italic;
+    }
+    .hobby-wrap { display: flex; flex-wrap: wrap; gap: 1rem; }
+    .hobby-item {
+      background: var(--white); border: 1px solid var(--gray-light);
+      border-radius: var(--radius); padding: 1.25rem 1.5rem;
+      flex: 1; min-width: 200px; transition: all 0.2s;
+    }
+    .hobby-item:hover { border-color: var(--teal); }
+    .hobby-emoji { font-size: 1.75rem; margin-bottom: 0.5rem; }
+    .hobby-name { font-size: 0.95rem; font-weight: 700; color: var(--navy); }
+    .hobby-transfer { font-size: 0.8rem; color: var(--gray); margin-top: 0.25rem; }
+
+    /* ─── TESTIMONIALS ─── */
+    #testimonials { background: var(--navy); }
+    #testimonials .section-title { color: var(--white); }
+    #testimonials .section-tag { color: var(--teal); }
+    .testimonials-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .testimonial-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius); padding: 2rem;
+    }
+    .testimonial-quote {
+      font-size: 0.95rem; color: rgba(255,255,255,0.8);
+      line-height: 1.7; font-style: italic; margin-bottom: 1.25rem;
+    }
+    .testimonial-author { font-size: 0.875rem; font-weight: 700; color: var(--teal); }
+    .testimonial-role { font-size: 0.8rem; color: rgba(255,255,255,0.45); }
+    .testimonial-placeholder {
+      border: 2px dashed rgba(255,255,255,0.15);
+      border-radius: var(--radius); padding: 2rem;
+      text-align: center; color: rgba(255,255,255,0.4);
+      font-size: 0.875rem;
+    }
+
+    /* ─── CONTACT ─── */
+    #contact { background: var(--offwhite); }
+    .contact-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 4rem; align-items: start;
+    }
+    .contact-info { }
+    .contact-item {
+      display: flex; align-items: center; gap: 1rem;
+      padding: 1rem 0; border-bottom: 1px solid var(--gray-light);
+    }
+    .contact-item-icon {
+      width: 44px; height: 44px; border-radius: 10px;
+      background: rgba(0,180,216,0.1); display: flex;
+      align-items: center; justify-content: center; font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .contact-item-label { font-size: 0.75rem; color: var(--gray); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+    .contact-item-val { font-size: 0.95rem; color: var(--navy); font-weight: 500; }
+    .contact-item-val a { color: var(--teal); text-decoration: none; }
+    .avail-badge {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: rgba(16,185,129,0.1); color: var(--success);
+      border: 1px solid rgba(16,185,129,0.3);
+      padding: 0.6rem 1.2rem; border-radius: 100px;
+      font-size: 0.875rem; font-weight: 600; margin: 1.5rem 0;
+    }
+    .avail-badge::before { content: '●'; font-size: 0.5rem; animation: pulse 2s infinite; }
+    .contact-form { }
+    .form-group { margin-bottom: 1.25rem; }
+    .form-label { display: block; font-size: 0.8rem; font-weight: 600; color: var(--navy); margin-bottom: 0.4rem; }
+    .form-input, .form-textarea {
+      width: 100%; padding: 0.8rem 1rem; border-radius: 8px;
+      border: 1px solid var(--gray-light); font-family: inherit;
+      font-size: 0.9rem; transition: border-color 0.2s;
+      background: var(--white); color: var(--navy);
+    }
+    .form-input:focus, .form-textarea:focus {
+      outline: none; border-color: var(--teal);
+      box-shadow: 0 0 0 3px rgba(0,180,216,0.1);
+    }
+    .form-textarea { resize: vertical; min-height: 120px; }
+    .form-submit {
+      width: 100%; background: var(--teal); color: var(--navy);
+      border: none; padding: 0.9rem; border-radius: 8px;
+      font-weight: 700; font-size: 1rem; cursor: pointer;
+      transition: all 0.2s; font-family: inherit;
+    }
+    .form-submit:hover {
+      background: var(--teal-light);
+      box-shadow: 0 4px 16px rgba(0,180,216,0.3);
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--navy); color: rgba(255,255,255,0.5);
+      text-align: center; padding: 2rem;
+      font-size: 0.85rem;
+    }
+    footer a { color: var(--teal); text-decoration: none; }
+
+    /* ─── ANIMATIONS ─── */
+    .fade-in {
+      opacity: 0; transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    /* ─── MOBILE ─── */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-links.open {
+        display: flex; flex-direction: column;
+        position: absolute; top: 64px; left: 0; right: 0;
+        background: var(--navy); padding: 1rem 2rem;
+        gap: 1rem;
+      }
+      .hamburger { display: block; }
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-photo-wrap { order: -1; }
+      .hero-photo { width: 180px; height: 180px; }
+      .timeline::before { left: 1rem; }
+      .tl-item, .tl-item:nth-child(even) { flex-direction: column; }
+      .tl-dot { left: 1rem; }
+      .tl-content, .tl-item:nth-child(odd) .tl-content,
+      .tl-item:nth-child(even) .tl-content {
+        width: calc(100% - 2.5rem); margin-left: 2.5rem;
+      }
+      .video-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .hero-stats { gap: 1.25rem; }
+    }
+
+    /* ─── SCROLL TO TOP ─── */
+    #scrolltop {
+      position: fixed; bottom: 2rem; right: 2rem;
+      width: 44px; height: 44px; border-radius: 50%;
+      background: var(--teal); color: var(--navy);
+      border: none; cursor: pointer; font-size: 1.2rem;
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; transition: opacity 0.3s;
+      z-index: 999;
+    }
+    #scrolltop.visible { opacity: 1; }
+  </style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav id="navbar">
+  <div class="nav-logo">Jairam <span>Goud</span></div>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#timeline">Journey</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-badge">Available for Full-Time Roles · Germany</div>
+      <h1 class="hero-title">
+        Turning Complexity<br/>into <span>Clarity</span> &<br/>Results.
+      </h1>
+      <p class="hero-subtitle">Product Manager · Project Manager · Operations Leader</p>
+      <p class="hero-desc">
+        10+ years driving product growth, operational excellence, and cross-functional delivery across Amazon, Google, IONOS and AdTech. MBA-qualified. Based in Germany. Ready for your team.
+      </p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary">→ Let's Connect</a>
+        <a href="#experience" class="btn-outline">Explore My Work</a>
+        <a href="#video" class="btn-outline">▶ Watch Intro</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <strong>10+</strong>
+          <span>Years Experience</span>
+        </div>
+        <div class="hero-stat">
+          <strong>4</strong>
+          <span>Global Companies</span>
+        </div>
+        <div class="hero-stat">
+          <strong>3</strong>
+          <span>Countries</span>
+        </div>
+        <div class="hero-stat">
+          <strong>2</strong>
+          <span>MBAs</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-photo-wrap">
+      <div class="hero-photo">
+        <div class="hero-photo-icon">👤</div>
+        <div class="hero-photo-label">Professional photo coming soon</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO INTRO -->
+<section id="video">
+  <div class="section-inner">
+    <div class="video-grid fade-in">
+      <div>
+        <div class="section-tag">Meet Jairam</div>
+        <h2 class="section-title">A 90-Second Introduction</h2>
+        <div class="divider"></div>
+        <p class="section-desc" style="margin-bottom:1.5rem;">
+          Prefer seeing the person behind the profile? Watch this short introduction to understand who I am, what I bring, and why I'd be a strong fit for your team.
+        </p>
+        <ul class="video-points">
+          <li>Who I am and my professional background</li>
+          <li>The journey from India to Germany and why it matters</li>
+          <li>The value I bring to product, project &amp; operations roles</li>
+          <li>What kind of team and mission I'm looking for</li>
+          <li>Why now is the right time to connect</li>
+        </ul>
+      </div>
+      <div>
+        <div class="video-placeholder" onclick="alert('Video coming soon! Jairam will upload his introduction video here.')">
+          <div class="play-btn">▶</div>
+          <div class="video-label">Click to play · 90-second intro</div>
+        </div>
+        <p style="font-size:0.8rem;color:var(--gray);margin-top:0.75rem;text-align:center;">
+          📹 Video introduction — <em>uploading soon</em>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CAREER TIMELINE -->
+<section id="timeline">
+  <div class="section-inner">
+    <div class="section-tag">Career Journey</div>
+    <h2 class="section-title">From Operations to Product</h2>
+    <div class="divider"></div>
+    <p class="section-desc">A deliberate progression across operations, digital media, project management, and product — now anchored in Germany with two MBAs and a clear mission.</p>
+    <div class="timeline">
+
+      <div class="tl-item fade-in">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-date">2015 – 2019</div>
+          <div class="tl-co">🟠 Amazon</div>
+          <div class="tl-role">Business Operations Specialist</div>
+          <div class="tl-desc">Built deep operational foundations managing business processes, escalations, counterfeit prevention, and cross-functional programs in a high-volume environment.</div>
+          <div class="tl-tag">Operations · Process Improvement</div>
+        </div>
+      </div>
+
+      <div class="tl-item fade-in">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-date">2019 – 2021</div>
+          <div class="tl-co">🔵 Google Operations Center</div>
+          <div class="tl-role">Senior Digital Media Specialist</div>
+          <div class="tl-desc">Moved into digital media operations — managing measurement, attribution, Google Ads, GA4, and GTM for large advertiser portfolios, building deep analytics expertise.</div>
+          <div class="tl-tag">Analytics · Digital Marketing · Measurement</div>
+        </div>
+      </div>
+
+      <div class="tl-item fade-in">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-date">2021 – 2023</div>
+          <div class="tl-co">📊 Ascendeum</div>
+          <div class="tl-role">Project Manager — Programmatic AdTech</div>
+          <div class="tl-desc">Stepped fully into project management, leading programmatic advertising campaigns across DV360, The Trade Desk, and Xandr. Accountable for delivery, ROI, and client performance.</div>
+          <div class="tl-tag">Project Management · AdTech · Stakeholders</div>
+        </div>
+      </div>
+
+      <div class="tl-item fade-in">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-date">2023 – 2024</div>
+          <div class="tl-co">🎓 Liverpool John Moores University</div>
+          <div class="tl-role">MBA — International Management</div>
+          <div class="tl-desc">First MBA consolidating global business, strategy, and leadership frameworks to prepare for senior cross-functional roles.</div>
+          <div class="tl-tag">MBA · Strategy · Leadership</div>
+        </div>
+      </div>
+
+      <div class="tl-item fade-in">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-date">Sep 2024 – Present</div>
+          <div class="tl-co">🌐 IONOS</div>
+          <div class="tl-role">Working Student — Product Management</div>
+          <div class="tl-desc">Supporting Product Management for Domains &amp; SSL. Driving roadmap planning, backlog grooming, BPMN process modelling, competitor analysis, and cross-functional delivery with engineering, UX, and ops.</div>
+          <div class="tl-tag">Product Management · IONOS · Germany</div>
+        </div>
+      </div>
+
+      <div class="tl-item fade-in">
+        <div class="tl-dot" style="background:var(--gold);box-shadow:0 0 0 3px var(--gold);"></div>
+        <div class="tl-content" style="border-left:3px solid var(--gold);">
+          <div class="tl-date">May 2026</div>
+          <div class="tl-co">🎓 Pforzheim Business School</div>
+          <div class="tl-role">MBA — International Management (Graduating)</div>
+          <div class="tl-desc">Completing my second MBA in Germany — focused on digital transformation, AI product strategy, and cross-cultural management. Now fully available for full-time roles in Germany.</div>
+          <div class="tl-tag" style="background:rgba(244,162,97,0.1);color:var(--gold);">Next Chapter · Full-Time · Germany</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="section-inner">
+    <div class="section-tag">Impact by the Numbers</div>
+    <h2 class="section-title">Measurable Results</h2>
+    <div class="divider"></div>
+    <p class="section-desc">Numbers from verified professional experience — not estimates, not guesses.</p>
+    <div class="achieve-grid">
+      <div class="achieve-card fade-in">
+        <div class="achieve-num">10+</div>
+        <div class="achieve-label">Years of professional experience across operations, marketing, and product</div>
+        <div class="achieve-sub">Amazon · Google · Ascendeum · IONOS</div>
+      </div>
+      <div class="achieve-card fade-in">
+        <div class="achieve-num">40%</div>
+        <div class="achieve-label">Improvement in brand authentication accuracy through workflow streamlining</div>
+        <div class="achieve-sub">Amazon — Transparency Program</div>
+      </div>
+      <div class="achieve-card fade-in">
+        <div class="achieve-num">5%</div>
+        <div class="achieve-label">Increase in domain transfer conversion rates via targeted promotions &amp; journey improvements</div>
+        <div class="achieve-sub">IONOS — Domain PU</div>
+      </div>
+      <div class="achieve-card fade-in">
+        <div class="achieve-num">~12K</div>
+        <div class="achieve-label">Yearly support interactions enabled through process and system improvements</div>
+        <div class="achieve-sub">Amazon — JDI Award Project</div>
+      </div>
+      <div class="achieve-card fade-in">
+        <div class="achieve-num">~200h</div>
+        <div class="achieve-label">Annual operational hours saved (0.1 FTE) improving associate &amp; customer experience</div>
+        <div class="achieve-sub">Amazon — JDI Award Project</div>
+      </div>
+      <div class="achieve-card fade-in">
+        <div class="achieve-num">500+</div>
+        <div class="achieve-label">Counterfeit listings removed, protecting brand integrity at scale</div>
+        <div class="achieve-sub">Amazon — Brand Protection</div>
+      </div>
+      <div class="achieve-card fade-in">
+        <div class="achieve-num">150+</div>
+        <div class="achieve-label">Advertiser portfolios supported across digital and programmatic channels</div>
+        <div class="achieve-sub">Google &amp; Ascendeum</div>
+      </div>
+      <div class="achieve-card fade-in">
+        <div class="achieve-num">50+</div>
+        <div class="achieve-label">Associates trained across operations and performance programs</div>
+        <div class="achieve-sub">Amazon Operations</div>
+      </div>
+      <div class="achieve-card fade-in">
+        <div class="achieve-num">2</div>
+        <div class="achieve-label">MBAs completed — Liverpool John Moores University &amp; Pforzheim Business School</div>
+        <div class="achieve-sub">International Management</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-inner">
+    <div class="section-tag">Work Experience</div>
+    <h2 class="section-title">Where I've Delivered</h2>
+    <div class="divider"></div>
+    <div class="exp-cards">
+
+      <!-- IONOS -->
+      <div class="exp-card fade-in">
+        <div class="exp-header">
+          <div>
+            <div class="exp-role">Working Student — Product Management</div>
+            <div class="exp-company">IONOS · Karlsruhe, Germany</div>
+          </div>
+          <div class="exp-dates">Sep 2024 – Present</div>
+        </div>
+        <p class="exp-desc">Supporting product strategy and delivery for IONOS's Domains &amp; SSL portfolio — one of Europe's leading web hosting and domain registrar platforms. Working directly alongside product managers, engineers, and UX teams in an Agile environment.</p>
+        <ul class="exp-bullets">
+          <li>Drove a 5% increase in domain transfer conversion rates through targeted price promotions and website journey improvements</li>
+          <li>Managed product backlog and roadmap planning using Jira and Confluence in an Agile/Scrum setup</li>
+          <li>Built BPMN process models to map and improve customer flows and operational workflows</li>
+          <li>Conducted competitor analysis, KPI tracking, A/B testing coordination, and cross-functional stakeholder alignment</li>
+          <li>Collaborated with engineering, UX, and operations to ship product increments aligned to business goals</li>
+        </ul>
+        <div class="exp-skills">
+          <span class="skill-chip">Product Roadmap</span>
+          <span class="skill-chip">Backlog Management</span>
+          <span class="skill-chip">Agile/Scrum</span>
+          <span class="skill-chip">BPMN</span>
+          <span class="skill-chip">Jira</span>
+          <span class="skill-chip">Competitor Analysis</span>
+          <span class="skill-chip">A/B Testing</span>
+          <span class="skill-chip">KPI Dashboards</span>
+        </div>
+      </div>
+
+      <!-- Google -->
+      <div class="exp-card fade-in">
+        <div class="exp-header">
+          <div>
+            <div class="exp-role">Senior Digital Media Specialist</div>
+            <div class="exp-company">Google Operations Center</div>
+          </div>
+          <div class="exp-dates">2019 – 2023</div>
+        </div>
+        <p class="exp-desc">Managed measurement, attribution, and campaign analytics for 150+ advertiser portfolios within Google's operations ecosystem. Delivered performance insights, resolved tracking issues, and supported clients in optimising digital investments across Google Ads, GA4, and GTM.</p>
+        <ul class="exp-bullets">
+          <li>Supported 150+ advertiser portfolios with campaign analytics, measurement strategy, and performance reporting</li>
+          <li>Resolved complex attribution and tracking issues using Google Analytics 4, Google Tag Manager, and Google Ads</li>
+          <li>Created 100+ performance and insights reports driving client-side optimisation decisions</li>
+          <li>Collaborated across cross-functional operations teams to maintain SLA compliance and quality standards</li>
+          <li>Improved client ROI tracking processes, contributing to 15–20% reported improvement in measurement accuracy</li>
+        </ul>
+        <div class="exp-skills">
+          <span class="skill-chip">Google Ads</span>
+          <span class="skill-chip">Google Analytics 4</span>
+          <span class="skill-chip">GTM</span>
+          <span class="skill-chip">Attribution</span>
+          <span class="skill-chip">Performance Reporting</span>
+          <span class="skill-chip">Client Management</span>
+          <span class="skill-chip">Data Analysis</span>
+        </div>
+      </div>
+
+      <!-- Ascendeum -->
+      <div class="exp-card fade-in">
+        <div class="exp-header">
+          <div>
+            <div class="exp-role">Project Manager — Programmatic AdTech</div>
+            <div class="exp-company">Ascendeum</div>
+          </div>
+          <div class="exp-dates">2021 – 2023</div>
+        </div>
+        <p class="exp-desc">Led end-to-end programmatic advertising campaign management across major DSPs including DV360, The Trade Desk, and Xandr. Accountable for campaign delivery, budget management, client stakeholder communication, and performance optimisation.</p>
+        <ul class="exp-bullets">
+          <li>Managed large-budget programmatic campaigns across DV360, The Trade Desk, and Xandr with accountability for ROI</li>
+          <li>Delivered project plans, timelines, and campaign reports to senior clients and internal stakeholders</li>
+          <li>Improved campaign performance through audience segmentation, bid strategy optimisation, and creative analysis</li>
+          <li>Coordinated with creative, analytics, and technology teams to ensure seamless campaign execution</li>
+          <li>Maintained client satisfaction through structured communication frameworks and proactive issue resolution</li>
+        </ul>
+        <div class="exp-skills">
+          <span class="skill-chip">DV360</span>
+          <span class="skill-chip">The Trade Desk</span>
+          <span class="skill-chip">Xandr</span>
+          <span class="skill-chip">Programmatic</span>
+          <span class="skill-chip">Project Management</span>
+          <span class="skill-chip">Stakeholder Communication</span>
+          <span class="skill-chip">Budget Management</span>
+        </div>
+      </div>
+
+      <!-- Amazon -->
+      <div class="exp-card fade-in">
+        <div class="exp-header">
+          <div>
+            <div class="exp-role">Business Operations Specialist</div>
+            <div class="exp-company">Amazon · India</div>
+          </div>
+          <div class="exp-dates">Oct 2015 – 2019</div>
+        </div>
+        <p class="exp-desc">Operated at the core of Amazon's business operations — managing escalations, counterfeit prevention, process improvement, and associate training within a high-velocity fulfilment and marketplace environment. Recipient of the JDI Award for operational innovation.</p>
+        <ul class="exp-bullets">
+          <li>Improved brand authentication accuracy by 40% through streamlined verification workflows under the Transparency Program</li>
+          <li>Removed 500+ counterfeit listings protecting brand partners and customer trust</li>
+          <li>Drove JDI Award-winning project that enabled ~12,000 yearly support interactions and saved ~200 operational hours annually</li>
+          <li>Trained 50+ associates across business operations, process protocols, and escalation management</li>
+          <li>Led counterfeit prevention initiatives resulting in measurable reduction in marketplace fraud</li>
+        </ul>
+        <div class="exp-skills">
+          <span class="skill-chip">Operations Management</span>
+          <span class="skill-chip">Process Improvement</span>
+          <span class="skill-chip">Counterfeit Prevention</span>
+          <span class="skill-chip">Training &amp; Development</span>
+          <span class="skill-chip">Escalation Management</span>
+          <span class="skill-chip">KPI Reporting</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- GERMANY JOURNEY -->
+<section id="germany">
+  <div class="section-inner">
+    <div class="section-tag">My German Chapter</div>
+    <h2 class="section-title" style="color:var(--white);">Why Germany. Why Now.</h2>
+    <div class="divider" style="background:linear-gradient(90deg,var(--gold),var(--teal));"></div>
+    <p class="section-desc" style="margin-bottom:2.5rem;">
+      Relocating to Germany was a deliberate career decision — to deepen my education, build international perspective, and position myself for senior roles at the intersection of product, operations, and digital transformation in Europe's largest economy.
+    </p>
+    <div class="germany-grid">
+      <div class="germany-card fade-in">
+        <div class="germany-card-icon">🎯</div>
+        <div class="germany-card-title">Why Germany</div>
+        <div class="germany-card-text">Germany is at the forefront of digital transformation in Europe. I came to build proximity to world-class companies, develop a European business perspective, and grow within international teams operating at scale.</div>
+      </div>
+      <div class="germany-card fade-in">
+        <div class="germany-card-icon">🎓</div>
+        <div class="germany-card-title">What I'm Learning</div>
+        <div class="germany-card-text">My MBA at Pforzheim Business School covers international strategy, digital product management, cross-cultural leadership, and AI-enabled business transformation — directly applicable to my target roles.</div>
+      </div>
+      <div class="germany-card fade-in">
+        <div class="germany-card-icon">🌍</div>
+        <div class="germany-card-title">International Advantage</div>
+        <div class="germany-card-text">Having worked across India, with global companies like Amazon and Google, and now in Germany, I bring multicultural fluency, adaptive communication, and the ability to work effectively across distributed and international teams.</div>
+      </div>
+      <div class="germany-card fade-in">
+        <div class="germany-card-icon">✅</div>
+        <div class="germany-card-title">Ready for Full-Time</div>
+        <div class="germany-card-text">Graduating in May 2026, I am fully available and actively seeking full-time roles. I am open to English-first and international teams. I am actively improving my German language skills (currently B1 level).</div>
+      </div>
+      <div class="germany-card fade-in">
+        <div class="germany-card-icon">🗣️</div>
+        <div class="germany-card-title">Language Journey</div>
+        <div class="germany-card-text">English: C1 (Business fluent). German: B1 and actively improving — taking language courses, consuming German media, and practicing daily. Committed to reaching B2 this year.</div>
+      </div>
+      <div class="germany-card fade-in">
+        <div class="germany-card-icon">📍</div>
+        <div class="germany-card-title">Location &amp; Flexibility</div>
+        <div class="germany-card-text">Based in Pforzheim, open to roles across Germany — including Frankfurt, Munich, Berlin, Hamburg, Stuttgart, and Karlsruhe. Open to hybrid and on-site positions. Willing to relocate.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-inner">
+    <div class="section-tag">Portfolio</div>
+    <h2 class="section-title">Selected Projects</h2>
+    <div class="divider"></div>
+    <p class="section-desc">A cross-section of academic research, product initiatives, business strategy, and operational innovation projects.</p>
+    <div class="projects-grid">
+
+      <div class="project-card fade-in">
+        <div class="project-type">🎓 MBA Thesis · AI & Product</div>
+        <div class="project-title">Agentic AI in Product Discovery &amp; Roadmap Prioritization</div>
+        <div class="project-desc">Researched how AI agents can automate and augment product discovery processes — including user research synthesis, opportunity scoring, and roadmap prioritization — to help product teams move faster with less bias.</div>
+        <div class="project-meta">Role: <span>Lead Researcher &amp; Author</span></div>
+        <div class="project-meta">Outcome: <span>Thesis submitted — Pforzheim Business School, 2026</span></div>
+        <div class="project-skills">
+          <span class="project-skill">AI Strategy</span>
+          <span class="project-skill">Product Management</span>
+          <span class="project-skill">Research</span>
+          <span class="project-skill">Roadmap Design</span>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-type">🌱 MBA Project · Sustainability</div>
+        <div class="project-title">AI-Enabled Solar-Powered E-Bike Brand Strategy</div>
+        <div class="project-desc">Developed a full brand identity, GTM strategy, and marketing plan for a solar-powered e-bike concept, integrating AI tools for customer segmentation, pricing modelling, and channel optimisation.</div>
+        <div class="project-meta">Role: <span>Strategy Lead &amp; Marketing Architect</span></div>
+        <div class="project-meta">Outcome: <span>Full brand and GTM strategy delivered</span></div>
+        <div class="project-skills">
+          <span class="project-skill">Brand Strategy</span>
+          <span class="project-skill">GTM</span>
+          <span class="project-skill">AI Tools</span>
+          <span class="project-skill">Sustainability</span>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-type">💙 Social Innovation · Product</div>
+        <div class="project-title">Elder-Care Technology Application</div>
+        <div class="project-desc">Designed a technology application concept for elderly users, addressing digital inclusion challenges. Focused on UX simplicity, caregiver integration, and health monitoring features.</div>
+        <div class="project-meta">Role: <span>Product Designer &amp; Researcher</span></div>
+        <div class="project-meta">Outcome: <span>Concept validated with user research</span></div>
+        <div class="project-skills">
+          <span class="project-skill">Product Design</span>
+          <span class="project-skill">UX Research</span>
+          <span class="project-skill">Social Impact</span>
+          <span class="project-skill">Prototyping</span>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-type">🌐 Product · IONOS</div>
+        <div class="project-title">Domain Transfer Conversion Optimisation</div>
+        <div class="project-desc">Led analysis and execution of targeted price promotions and website flow improvements that increased domain transfer conversion by 5% for top-performing TLDs at IONOS.</div>
+        <div class="project-meta">Role: <span>Product Management Support</span></div>
+        <div class="project-meta">Outcome: <span>+5% transfer conversion on targeted TLDs</span></div>
+        <div class="project-skills">
+          <span class="project-skill">Conversion Optimisation</span>
+          <span class="project-skill">A/B Testing</span>
+          <span class="project-skill">Product Analytics</span>
+          <span class="project-skill">Pricing Strategy</span>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-type">🔐 Operations · Amazon</div>
+        <div class="project-title">JDI Award — Operational Process Innovation</div>
+        <div class="project-desc">Designed and implemented a process change that enabled ~12,000 yearly support interactions and improved issue tracking visibility, saving ~200 operational hours annually. Recognised with Amazon's JDI Award.</div>
+        <div class="project-meta">Role: <span>Process Innovator &amp; Lead</span></div>
+        <div class="project-meta">Outcome: <span>JDI Award · 200h saved annually · 0.1 FTE efficiency</span></div>
+        <div class="project-skills">
+          <span class="project-skill">Process Design</span>
+          <span class="project-skill">Operational Efficiency</span>
+          <span class="project-skill">Change Management</span>
+          <span class="project-skill">Metrics</span>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-type">📊 AdTech · Ascendeum</div>
+        <div class="project-title">Programmatic Campaign Performance Framework</div>
+        <div class="project-desc">Built a structured campaign management and reporting framework for programmatic advertising across DV360, TTD, and Xandr — reducing turnaround time, improving ROI tracking, and standardising client reporting.</div>
+        <div class="project-meta">Role: <span>Project Manager &amp; Framework Designer</span></div>
+        <div class="project-meta">Outcome: <span>Standardised delivery across 150+ advertiser portfolios</span></div>
+        <div class="project-skills">
+          <span class="project-skill">Programmatic</span>
+          <span class="project-skill">DV360</span>
+          <span class="project-skill">Reporting</span>
+          <span class="project-skill">Client Management</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-inner">
+    <div class="section-tag">Capabilities</div>
+    <h2 class="section-title">Skills &amp; Expertise</h2>
+    <div class="divider"></div>
+    <div class="skills-grid">
+
+      <div class="skill-group fade-in">
+        <div class="skill-group-title"><span>🗺️</span> Product Management</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Roadmap Planning</span>
+          <span class="skill-tag">Backlog Management</span>
+          <span class="skill-tag">User Stories</span>
+          <span class="skill-tag">Product Discovery</span>
+          <span class="skill-tag">A/B Testing</span>
+          <span class="skill-tag">Competitor Analysis</span>
+          <span class="skill-tag">KPI Definition</span>
+          <span class="skill-tag">CMS Governance</span>
+        </div>
+      </div>
+
+      <div class="skill-group fade-in">
+        <div class="skill-group-title"><span>📋</span> Project &amp; Program Management</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Agile/Scrum</span>
+          <span class="skill-tag">BPMN</span>
+          <span class="skill-tag">Project Planning</span>
+          <span class="skill-tag">Risk Management</span>
+          <span class="skill-tag">Milestone Tracking</span>
+          <span class="skill-tag">Cross-Team Coordination</span>
+          <span class="skill-tag">Stakeholder Reporting</span>
+        </div>
+      </div>
+
+      <div class="skill-group fade-in">
+        <div class="skill-group-title"><span>⚙️</span> Operations Management</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Process Improvement</span>
+          <span class="skill-tag">Escalation Management</span>
+          <span class="skill-tag">SOPs</span>
+          <span class="skill-tag">Training &amp; Enablement</span>
+          <span class="skill-tag">Quality Assurance</span>
+          <span class="skill-tag">Capacity Planning</span>
+        </div>
+      </div>
+
+      <div class="skill-group fade-in">
+        <div class="skill-group-title"><span>📡</span> Digital Marketing &amp; AdTech</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Google Ads</span>
+          <span class="skill-tag">DV360</span>
+          <span class="skill-tag">The Trade Desk</span>
+          <span class="skill-tag">Xandr</span>
+          <span class="skill-tag">Programmatic</span>
+          <span class="skill-tag">Attribution</span>
+          <span class="skill-tag">Campaign Management</span>
+          <span class="skill-tag">Mailchimp</span>
+        </div>
+      </div>
+
+      <div class="skill-group fade-in">
+        <div class="skill-group-title"><span>📊</span> Data &amp; Analytics</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Google Analytics 4</span>
+          <span class="skill-tag">Power BI</span>
+          <span class="skill-tag">SQL (Basic)</span>
+          <span class="skill-tag">KPI Dashboards</span>
+          <span class="skill-tag">A/B Testing</span>
+          <span class="skill-tag">Measurement</span>
+          <span class="skill-tag">Google Tag Manager</span>
+        </div>
+      </div>
+
+      <div class="skill-group fade-in">
+        <div class="skill-group-title"><span>🤝</span> Stakeholder &amp; Communication</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Stakeholder Management</span>
+          <span class="skill-tag">Executive Reporting</span>
+          <span class="skill-tag">Cross-Functional Alignment</span>
+          <span class="skill-tag">Client Management</span>
+          <span class="skill-tag">Technical Documentation</span>
+        </div>
+      </div>
+
+      <div class="skill-group fade-in">
+        <div class="skill-group-title"><span>🛠️</span> Tools &amp; Platforms</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Jira</span>
+          <span class="skill-tag">Confluence</span>
+          <span class="skill-tag">Notion</span>
+          <span class="skill-tag">Figma (basics)</span>
+          <span class="skill-tag">Salesforce</span>
+          <span class="skill-tag">n8n</span>
+          <span class="skill-tag">REST APIs</span>
+        </div>
+      </div>
+
+      <div class="skill-group fade-in">
+        <div class="skill-group-title"><span>🤖</span> AI &amp; Automation</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Prompt Engineering</span>
+          <span class="skill-tag">Claude / GPT workflows</span>
+          <span class="skill-tag">AI Product Strategy</span>
+          <span class="skill-tag">n8n Automation</span>
+          <span class="skill-tag">Webhooks</span>
+          <span class="skill-tag">AI-Enabled Research</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL IMPACT -->
+<section id="impact">
+  <div class="section-inner">
+    <div class="section-tag">Values &amp; Community</div>
+    <h2 class="section-title">Beyond the Job Title</h2>
+    <div class="divider"></div>
+    <p class="section-desc">Leadership, service, and community are values I carry beyond the office. Here's what that looks like in practice.</p>
+    <div class="impact-grid">
+      <div class="impact-card fade-in">
+        <div class="impact-icon">🎓</div>
+        <div class="impact-title">Student Community Leadership</div>
+        <div class="impact-text">Active participant in MBA student initiatives at Pforzheim Business School — supporting international student integration, knowledge-sharing, and cross-cultural exchange programmes.</div>
+      </div>
+      <div class="impact-card fade-in">
+        <div class="impact-icon">🌱</div>
+        <div class="impact-title">ESG &amp; Sustainability Research</div>
+        <div class="impact-text">Conducted academic research on ESG and sustainability topics during my MBA — exploring business models, social responsibility, and environmental strategy in international contexts.</div>
+      </div>
+      <div class="impact-card fade-in">
+        <div class="impact-icon">🤝</div>
+        <div class="impact-title">NGO &amp; Volunteering</div>
+        <div class="impact-text">Involvement in community and social impact activities. <em style="color:var(--teal);">[Needs your input — please share any NGO work, volunteering, or community initiatives to add here]</em></div>
+      </div>
+      <div class="impact-card fade-in">
+        <div class="impact-icon">🎪</div>
+        <div class="impact-title">Event Organisation</div>
+        <div class="impact-text">Organised and co-ordinated professional and community events — developing logistics, communication, and team coordination skills in non-corporate settings.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOBBIES -->
+<section id="hobbies">
+  <div class="section-inner">
+    <div class="section-tag">The Human Side</div>
+    <h2 class="section-title">Outside of Work</h2>
+    <div class="divider"></div>
+    <p class="section-desc">What I do when I'm not managing products or building roadmaps — and why it matters professionally.</p>
+    <div class="hobby-wrap">
+      <div class="hobby-item fade-in">
+        <div class="hobby-emoji">🏏</div>
+        <div class="hobby-name">Cricket</div>
+        <div class="hobby-transfer">Teamwork · Strategy · Pressure performance</div>
+      </div>
+      <div class="hobby-item fade-in">
+        <div class="hobby-emoji">⚽</div>
+        <div class="hobby-name">Sports &amp; Fitness</div>
+        <div class="hobby-transfer">Discipline · Resilience · Consistency</div>
+      </div>
+      <div class="hobby-item fade-in">
+        <div class="hobby-emoji">🇩🇪</div>
+        <div class="hobby-name">Learning German</div>
+        <div class="hobby-transfer">Cultural adaptability · Persistence · Growth mindset</div>
+      </div>
+      <div class="hobby-item fade-in">
+        <div class="hobby-emoji">🤖</div>
+        <div class="hobby-name">AI &amp; Tech Exploration</div>
+        <div class="hobby-transfer">Curiosity · Innovation · Staying ahead of the curve</div>
+      </div>
+      <div class="hobby-item fade-in">
+        <div class="hobby-emoji">🎪</div>
+        <div class="hobby-name">Event Organisation</div>
+        <div class="hobby-transfer">Leadership · Logistics · Community building</div>
+      </div>
+      <div class="hobby-item fade-in">
+        <div class="hobby-emoji">✈️</div>
+        <div class="hobby-name">Travel &amp; Cultural Curiosity</div>
+        <div class="hobby-transfer">Global perspective · Empathy · Cross-cultural fluency</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-inner">
+    <div class="section-tag">What Others Say</div>
+    <h2 class="section-title">Testimonials &amp; References</h2>
+    <div class="divider"></div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card fade-in">
+        <div class="testimonial-quote">"Jairam consistently delivered structured, stakeholder-ready outputs in our product team. His ability to translate business requirements into actionable plans and work seamlessly across engineering and UX made him a valuable contributor."</div>
+        <div class="testimonial-author">Product Manager · IONOS</div>
+        <div class="testimonial-role">Colleague — Domains &amp; SSL Team <em style="color:rgba(255,255,255,0.3);">[awaiting LinkedIn recommendation]</em></div>
+      </div>
+      <div class="testimonial-placeholder fade-in">
+        <div style="font-size:2rem;margin-bottom:0.75rem;">💬</div>
+        <div style="font-weight:600;margin-bottom:0.5rem;color:rgba(255,255,255,0.6);">Testimonial from Manager or Professor</div>
+        <div>Add a recommendation from a IONOS manager, Pforzheim professor, or Google/Amazon colleague. LinkedIn recommendations are ideal.</div>
+      </div>
+      <div class="testimonial-placeholder fade-in">
+        <div style="font-size:2rem;margin-bottom:0.75rem;">💬</div>
+        <div style="font-weight:600;margin-bottom:0.5rem;color:rgba(255,255,255,0.6);">Testimonial from Client or Peer</div>
+        <div>A quote from an Ascendeum client, Google colleague, or MBA peer would add strong social proof for PM/ops roles in Germany.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-tag">Get in Touch</div>
+    <h2 class="section-title">Let's Talk About Your Next Hire</h2>
+    <div class="divider"></div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="avail-badge">Available for Full-Time Roles · Germany</div>
+        <p style="color:var(--gray);margin-bottom:1.5rem;font-size:0.95rem;">I'm actively looking for full-time opportunities in Germany in Product Management, Project Management, Operations, and related roles. If my background looks like a fit for your team, I'd love to hear from you.</p>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">📧</div>
+          <div>
+            <div class="contact-item-label">Email</div>
+            <div class="contact-item-val"><a href="mailto:jairamgoud@gmail.com">jairamgoud@gmail.com</a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">🔗</div>
+          <div>
+            <div class="contact-item-label">LinkedIn</div>
+            <div class="contact-item-val"><a href="https://linkedin.com/in/jairamgoud" target="_blank">linkedin.com/in/jairamgoud</a> <em style="font-size:0.75rem;color:var(--gray);">[update URL]</em></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">📍</div>
+          <div>
+            <div class="contact-item-label">Location</div>
+            <div class="contact-item-val">Pforzheim, Germany · Open to all of Germany</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">🌐</div>
+          <div>
+            <div class="contact-item-label">Language</div>
+            <div class="contact-item-val">English (C1) · German (B1, improving)</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">📄</div>
+          <div>
+            <div class="contact-item-label">Resume</div>
+            <div class="contact-item-val"><a href="#">Download PDF</a> <em style="font-size:0.75rem;color:var(--gray);">[add resume file link]</em></div>
+          </div>
+        </div>
+        <div style="margin-top:1.5rem;">
+          <a href="https://profile.indeed.com" class="btn-primary" target="_blank" style="display:inline-block;">View Indeed Profile →</a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h3 style="font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:1.25rem;">Send a Message</h3>
+        <form onsubmit="handleForm(event)">
+          <div class="form-group">
+            <label class="form-label">Your Name</label>
+            <input type="text" class="form-input" placeholder="Jane Müller" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Company</label>
+            <input type="text" class="form-input" placeholder="Your Company GmbH" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-input" placeholder="jane@company.de" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Message</label>
+            <textarea class="form-textarea" placeholder="We have a Product Manager / Project Manager role you might be interested in..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Jairam Goud · Pforzheim, Germany · Built to support full-time opportunities in Germany</p>
+  <p style="margin-top:0.5rem;">
+    <a href="mailto:jairamgoud@gmail.com">Email</a> ·
+    <a href="https://linkedin.com/in/jairamgoud" target="_blank">LinkedIn</a> ·
+    <a href="https://profile.indeed.com" target="_blank">Indeed</a>
+  </p>
+</footer>
+
+<!-- Scroll to top -->
+<button id="scrolltop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll to top">↑</button>
+
+<script>
+  // Hamburger menu
+  function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('open');
+  }
+
+  // Scroll to top visibility
+  window.addEventListener('scroll', () => {
+    const btn = document.getElementById('scrolltop');
+    btn.classList.toggle('visible', window.scrollY > 400);
+  });
+
+  // Fade-in observer
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // Animated counters
+  function animateCounter(el, target, suffix='') {
+    let current = 0;
+    const inc = target / 60;
+    const timer = setInterval(() => {
+      current += inc;
+      if (current >= target) {
+        current = target;
+        clearInterval(timer);
+      }
+      el.textContent = (suffix === '%' || suffix === 'h')
+        ? Math.round(current) + suffix
+        : Math.round(current) + suffix;
+    }, 20);
+  }
+
+  // Counter observer
+  const counterObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const nums = entry.target.querySelectorAll('.achieve-num');
+        nums.forEach(el => {
+          const text = el.textContent;
+          if (text.includes('%')) animateCounter(el, parseInt(text), '%');
+          else if (text.includes('K')) {
+            el.textContent = '0K';
+            let c = 0;
+            const t = setInterval(() => {
+              c += 0.2;
+              if (c >= 12) { c = 12; clearInterval(t); }
+              el.textContent = '~' + Math.round(c) + 'K';
+            }, 20);
+          } else if (text.includes('h')) {
+            let c = 0;
+            const t = setInterval(() => {
+              c += 3.3;
+              if (c >= 200) { c = 200; clearInterval(t); }
+              el.textContent = '~' + Math.round(c) + 'h';
+            }, 20);
+          } else if (text.includes('+')) {
+            const num = parseInt(text);
+            animateCounter(el, num, '+');
+          }
+        });
+        counterObs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  document.querySelectorAll('#achievements').forEach(el => counterObs.observe(el));
+
+  // Form handler
+  function handleForm(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('.form-submit');
+    btn.textContent = '✓ Message sent! I\'ll be in touch soon.';
+    btn.style.background = 'var(--success)';
+    btn.disabled = true;
+  }
+</script>
+</body>
+</html>
