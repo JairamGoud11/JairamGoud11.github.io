@@ -1364,22 +1364,24 @@
       </div>
       <div class="contact-form">
         <h3 style="font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:1.25rem;">Send a Message</h3>
-        <form onsubmit="handleForm(event)">
+        <form action="https://formspree.io/f/xjgzrzzw" method="POST">
+          <input type="hidden" name="_subject" value="New message from your portfolio website" />
+          <input type="hidden" name="_next" value="https://JairamGoud11.github.io#contact" />
           <div class="form-group">
             <label class="form-label">Your Name</label>
-            <input type="text" class="form-input" placeholder="Jane Müller" required />
+            <input type="text" name="name" class="form-input" placeholder="Jane Müller" required />
           </div>
           <div class="form-group">
             <label class="form-label">Company</label>
-            <input type="text" class="form-input" placeholder="Your Company GmbH" />
+            <input type="text" name="company" class="form-input" placeholder="Your Company GmbH" />
           </div>
           <div class="form-group">
             <label class="form-label">Email Address</label>
-            <input type="email" class="form-input" placeholder="jane@company.de" required />
+            <input type="email" name="email" class="form-input" placeholder="jane@company.de" required />
           </div>
           <div class="form-group">
             <label class="form-label">Message</label>
-            <textarea class="form-textarea" placeholder="We have a Product Manager / Project Manager role you might be interested in..." required></textarea>
+            <textarea name="message" class="form-textarea" placeholder="We have a Product Manager / Project Manager role you might be interested in..." required></textarea>
           </div>
           <button type="submit" class="form-submit">Send Message →</button>
         </form>
@@ -1476,14 +1478,7 @@
 
   document.querySelectorAll('#achievements').forEach(el => counterObs.observe(el));
 
-  // Form handler
-  function handleForm(e) {
-    e.preventDefault();
-    const btn = e.target.querySelector('.form-submit');
-    btn.textContent = '✓ Message sent! I\'ll be in touch soon.';
-    btn.style.background = 'var(--success)';
-    btn.disabled = true;
-  }
+  // Form handled by Formspree — no JS needed
 </script>
 </body>
 </html>
