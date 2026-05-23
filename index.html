@@ -407,6 +407,40 @@
       border-radius: 4px; font-weight: 500;
     }
 
+    /* ─── CERTIFICATIONS ─── */
+    #certifications { background: var(--white); }
+    .cert-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+    }
+    .cert-card {
+      border: 1px solid var(--gray-light); border-radius: var(--radius);
+      padding: 1.25rem 1.5rem; display: flex; gap: 1rem;
+      align-items: flex-start; transition: all 0.2s;
+      text-decoration: none; color: inherit;
+    }
+    .cert-card:hover {
+      border-color: var(--teal);
+      box-shadow: var(--shadow-hover); transform: translateY(-2px);
+    }
+    .cert-logo {
+      width: 44px; height: 44px; border-radius: 8px;
+      object-fit: contain; flex-shrink: 0;
+      background: var(--offwhite); padding: 4px;
+    }
+    .cert-logo-text {
+      width: 44px; height: 44px; border-radius: 8px;
+      background: var(--navy); color: var(--white);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.65rem; font-weight: 700; text-align: center;
+      flex-shrink: 0; line-height: 1.2;
+    }
+    .cert-info { flex: 1; min-width: 0; }
+    .cert-name { font-size: 0.9rem; font-weight: 700; color: var(--navy); margin-bottom: 0.2rem; }
+    .cert-issuer { font-size: 0.775rem; color: var(--teal); font-weight: 600; }
+    .cert-year { font-size: 0.75rem; color: var(--gray); margin-top: 0.2rem; }
+    .cert-link-icon { color: var(--gray); font-size: 0.8rem; margin-top: 2px; }
+
     /* ─── SKILLS ─── */
     #skills { background: var(--offwhite); }
     .skills-grid {
@@ -623,6 +657,7 @@
     <li><a href="#timeline">Journey</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certificates</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#contact" class="nav-cta">Contact</a></li>
   </ul>
@@ -852,9 +887,12 @@
       <!-- IONOS -->
       <div class="exp-card fade-in">
         <div class="exp-header">
-          <div>
-            <div class="exp-role">Working Student — Product Management</div>
-            <div class="exp-company">IONOS · Karlsruhe, Germany</div>
+          <div style="display:flex;align-items:center;gap:1rem;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/IONOS_by_1%261_logo.svg" alt="IONOS" style="height:28px;object-fit:contain;" onerror="this.style.display='none'" />
+            <div>
+              <div class="exp-role">Working Student — Product Management</div>
+              <div class="exp-company">IONOS · Karlsruhe, Germany</div>
+            </div>
           </div>
           <div class="exp-dates">Sep 2024 – Present</div>
         </div>
@@ -881,9 +919,12 @@
       <!-- Google -->
       <div class="exp-card fade-in">
         <div class="exp-header">
-          <div>
-            <div class="exp-role">Senior Digital Media Specialist</div>
-            <div class="exp-company">Google Operations Center</div>
+          <div style="display:flex;align-items:center;gap:1rem;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" style="height:28px;object-fit:contain;" onerror="this.style.display='none'" />
+            <div>
+              <div class="exp-role">Senior Digital Media Specialist</div>
+              <div class="exp-company">Google Operations Center</div>
+            </div>
           </div>
           <div class="exp-dates">2019 – 2023</div>
         </div>
@@ -909,9 +950,12 @@
       <!-- Ascendeum -->
       <div class="exp-card fade-in">
         <div class="exp-header">
-          <div>
-            <div class="exp-role">Project Manager — Programmatic AdTech</div>
-            <div class="exp-company">Ascendeum</div>
+          <div style="display:flex;align-items:center;gap:1rem;">
+            <div style="width:36px;height:36px;border-radius:8px;background:#1a1a2e;display:flex;align-items:center;justify-content:center;color:white;font-size:0.6rem;font-weight:700;flex-shrink:0;">ASC</div>
+            <div>
+              <div class="exp-role">Project Manager — Programmatic AdTech</div>
+              <div class="exp-company">Ascendeum</div>
+            </div>
           </div>
           <div class="exp-dates">2021 – 2023</div>
         </div>
@@ -937,9 +981,12 @@
       <!-- Amazon -->
       <div class="exp-card fade-in">
         <div class="exp-header">
-          <div>
-            <div class="exp-role">Business Operations Specialist</div>
-            <div class="exp-company">Amazon · India</div>
+          <div style="display:flex;align-items:center;gap:1rem;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" style="height:28px;object-fit:contain;" onerror="this.style.display='none'" />
+            <div>
+              <div class="exp-role">Business Operations Specialist</div>
+              <div class="exp-company">Amazon · India</div>
+            </div>
           </div>
           <div class="exp-dates">Oct 2015 – 2019</div>
         </div>
@@ -1099,6 +1146,98 @@
           <span class="project-skill">DV360</span>
           <span class="project-skill">Reporting</span>
           <span class="project-skill">Client Management</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="section-inner">
+    <div class="section-tag">Credentials</div>
+    <h2 class="section-title">Certifications & Qualifications</h2>
+    <div class="divider"></div>
+    <p class="section-desc">Verified professional credentials across project management, digital marketing, and business management.</p>
+    <div class="cert-grid">
+
+      <a class="cert-card fade-in" href="https://drive.google.com/file/d/1LO24UkP2-YgHJLB8_X9Yrdq6JSBEln2r/view" target="_blank">
+        <img class="cert-logo" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" />
+        <div class="cert-info">
+          <div class="cert-name">Google Project Management Certificate</div>
+          <div class="cert-issuer">Google · Coursera</div>
+          <div class="cert-year">2023</div>
+        </div>
+        <div class="cert-link-icon">↗</div>
+      </a>
+
+      <a class="cert-card fade-in" href="https://drive.google.com/file/d/1QbR-ZjtS_peJVk2jMYo2oXCT-IOOkYQp/view" target="_blank">
+        <img class="cert-logo" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" />
+        <div class="cert-info">
+          <div class="cert-name">Google Project Management Certificate</div>
+          <div class="cert-issuer">Google · Coursera</div>
+          <div class="cert-year">2022</div>
+        </div>
+        <div class="cert-link-icon">↗</div>
+      </a>
+
+      <a class="cert-card fade-in" href="https://drive.google.com/file/d/1jq_XrnXLZnTrG_hrbJ5cQ0tODxVqMhmT/view" target="_blank">
+        <div class="cert-logo-text">LJMU</div>
+        <div class="cert-info">
+          <div class="cert-name">MBA — International Management</div>
+          <div class="cert-issuer">Liverpool John Moores University</div>
+          <div class="cert-year">2023</div>
+        </div>
+        <div class="cert-link-icon">↗</div>
+      </a>
+
+      <a class="cert-card fade-in" href="https://drive.google.com/file/d/1-SU1DeHxh-z5UhpGUqoeKmvjHvll43pj/view" target="_blank">
+        <div class="cert-logo-text">IMT</div>
+        <div class="cert-info">
+          <div class="cert-name">IMT Certificate</div>
+          <div class="cert-issuer">IMT — Management Qualification</div>
+          <div class="cert-year">2023</div>
+        </div>
+        <div class="cert-link-icon">↗</div>
+      </a>
+
+      <a class="cert-card fade-in" href="https://drive.google.com/file/d/1BqGcw9JoPrtobKAwoQtZ6_6QvhZf2val/view" target="_blank">
+        <div class="cert-logo-text" style="background:var(--teal);color:var(--navy);">APS</div>
+        <div class="cert-info">
+          <div class="cert-name">APS Certificate</div>
+          <div class="cert-issuer">Akademische Prüfstelle · Germany</div>
+          <div class="cert-year">2024</div>
+        </div>
+        <div class="cert-link-icon">↗</div>
+      </a>
+
+      <a class="cert-card fade-in" href="https://drive.google.com/file/d/1ng1eqARzcZgrjGJGqVBXSKf-FjLiBjKv/view" target="_blank">
+        <div class="cert-logo-text" style="background:var(--gold);color:var(--navy);">GMV</div>
+        <div class="cert-info">
+          <div class="cert-name">GMV Certificate</div>
+          <div class="cert-issuer">Professional Certification</div>
+          <div class="cert-year">2023</div>
+        </div>
+        <div class="cert-link-icon">↗</div>
+      </a>
+
+      <a class="cert-card fade-in" href="https://drive.google.com/file/d/1o5bxeIMYfcd_vQQiRKxF0SSLB_EooQvm/view" target="_blank">
+        <div class="cert-logo-text" style="font-size:0.6rem;">B.Com</div>
+        <div class="cert-info">
+          <div class="cert-name">Bachelor of Commerce — Degree Certificate</div>
+          <div class="cert-issuer">Indian Institute of Management</div>
+          <div class="cert-year">2015</div>
+        </div>
+        <div class="cert-link-icon">↗</div>
+      </a>
+
+      <div class="cert-card fade-in" style="border-style:dashed;cursor:default;">
+        <div class="cert-logo-text" style="background:var(--gray);">+</div>
+        <div class="cert-info">
+          <div class="cert-name">More Certifications</div>
+          <div class="cert-issuer" style="color:var(--gray);">Certificates 1–4 & additional qualifications</div>
+          <div class="cert-year" style="color:var(--teal);">Tell me what these are to add them</div>
         </div>
       </div>
 
